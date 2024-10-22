@@ -1,0 +1,250 @@
+<div class="row mr-0 m-md-5">
+    <div class="col-md-4">
+        <div class="sidenav">
+            <ul>
+                <li (click)="tabChange(1)" [ngClass]="{'liControl': tab==1}">1. Mortgage & Debt</li>
+                <li (click)="tabChange(2)" [ngClass]="{'liControl': tab==2}">2. Living Expenses</li>
+                <li (click)="tabChange(3)" [ngClass]="{'liControl': tab==3}">3. Final Expenses</li>
+                <li (click)="tabChange(4)" [ngClass]="{'liControl': tab==4}">4. Existing Life Insurance</li>
+                <li (click)="tabChange(5)" [ngClass]="{'liControl': tab==5}">5. Savings/Other Resources</li>
+                <li (click)="tabChange(6)" [ngClass]="{'liControl': tab==6}">6. Total Insurance Needed</li>
+            </ul>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <div class="formDivs">
+            <form [formGroup]="form">
+                <!-- mortgage and debt -->
+                <ng-container *ngIf="tab==1">
+                    <div class="card">
+                        <div class="header">
+                            <div class="card-header">
+                                1. Mortgage & Debt
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-intro">
+                                <b>In case of your death.</b><br>
+                                <b>Estimate the total of Mortgage, Loans, or Credit Cards to be paid off.</b>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div style="display:flex">
+                                        <span class="labels">+ $</span> <input type="number" class="form-control"
+                                            formControlName="debtAmt" (keyup)="totalCalculation()">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="button" class=" btn btn-warning butn" (click)="tabChange(2)">Next <i
+                                            class="far fa-hand-point-right"></i>
+                                    </button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </ng-container>
+                <!-- living expenses -->
+                <ng-container *ngIf="tab==2">
+                    <div class="card">
+                        <div class="header">
+                            <div class="card-header">
+                                2. Living Expenses
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-intro">
+                                <b>How much money will your family need to maintain their standard of living over
+                                    perhaps
+                                    several years if you die? Multiply your annual income by the number of years it
+                                    would
+                                    need to be replaced.</b>
+                            </div><br>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div style="display:flex">
+                                        <span class="labels">+ $</span> <input type="number" class="form-control field"
+                                            formControlName="anualIncm" placeholder="Annual Income"
+                                            (keyup)="calcIncome()">
+                                    </div>
+                                    <div style="display:flex">
+                                        <span class="labels">x</span>
+                                        <input type="number" class="form-control field" formControlName="noOfYears"
+                                            placeholder="Number of Years" (keyup)="calcIncome()">
+                                    </div>
+                                    <div style="display:flex">
+                                        <span class="labels">=</span>
+                                        <div class="form-control field">$ {{totalDebt}}</div>
+
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="button" class=" btn btn-warning butn" (click)="tabChange(3)">Next <i
+                                            class="far fa-hand-point-right"></i></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </ng-container>
+                <!-- Final Expenses -->
+                <ng-container *ngIf="tab==3">
+                    <div class="card">
+                        <div class="header">
+                            <div class="card-header">
+                                3. Final Expenses
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-intro">
+                                <b>Estimate how much money your family would need to meet immediate expenses such as
+                                    funeral
+                                    costs and legal expenses.
+                                </b>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div style="display:flex">
+                                        <span class="labels">+ $</span>
+                                        <input type="number" class="form-control" placeholder="Final Expenses"
+                                            formControlName="finalExpense" (keyup)="totalCalculation()">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="button" class=" btn btn-warning butn" (click)="tabChange(4)"><b>Next
+                                        </b><i class="far fa-hand-point-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+                <!-- Existing Life Insurance -->
+                <ng-container *ngIf="tab==4">
+                    <div class="card">
+                        <div class="header">
+                            <div class="card-header">
+                                4. Existing Life Insurance
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-intro">
+                                <b>Do you have any existing life insurance? Enter total coverage amount of all your
+                                    existing
+                                    life insurance, including any Empire Life Simplified 10 and Simplified 20
+                                    coverage
+                                    currently
+                                    on your life.
+                                </b>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div style="display:flex">
+                                        <span class="labels">- $</span>
+                                        <input type="number" class="form-control" formControlName="amtExistingIncm"
+                                            placeholder="Amount of Existing Life Insurance"
+                                            (keyup)="totalCalculation()">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="button" class=" btn btn-warning butn" (click)="tabChange(5)">Next
+                                        <i class="far fa-hand-point-right"></i></button>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </ng-container>
+                <!-- Savings or Other Financial Resources -->
+                <ng-container *ngIf="tab==5">
+                    <div class="card">
+                        <div class="header">
+                            <div class="card-header">
+                                5. Savings or Other Financial Resources
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-intro">
+                                <b>Enter the amount of any savings or other financial resources that would be used
+                                    to pay debts and expenses if you died.
+                                </b>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-8">
+                                    <div style="display:flex">
+                                        <span class="labels">- $</span>
+                                        <input type="number" class="form-control" placeholder="Enter Total Amount"
+                                            formControlName="financialResources" (keyup)="totalCalculation()">
+                                    </div>
+                                </div>
+                                <div class="col-md-4">
+                                    <button type="button" class=" btn btn-warning butn" (click)="tabChange(6)">Next
+                                        <i class="far fa-hand-point-right"></i></button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+                <!-- Total -->
+                <ng-container *ngIf="tab==6">
+                    <div class="card">
+                        <div class="header">
+                            <div class="card-header">
+                                6. Total Life Insurance Needed
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <div class="card-intro">
+                                <b>How much money will your family need to maintain their standard of living over
+                                    perhaps
+                                    several years if you die? Multiply your annual income by the number of years it
+                                    would
+                                    need to be replaced.</b>
+                            </div>
+                            <div class="alert">Answer to atleast one question is a must &nbsp;&nbsp;<i
+                                    class="fas fa-exclamation mt-1"></i>
+                            </div><br>
+                            <div class="row justify-content-center">
+                                <div class="col-md-8">
+                                    <div class="row">
+                                        <div class="col-md-6">Total Debt and Expenses</div>
+                                        <div class="col-md-6"><label class="form-control">$
+                                                {{totalDebtAndFinance}}</label>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">Total Existing Sources of Income</div>
+                                        <div class="col-md-6">
+                                            <label class="form-control">$
+                                                {{totalExistingIncm}}</label>
+                                        </div><br>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6">Total Life Insurance Needed</div>
+                                        <div class="col-md-6"><label class="form-control"
+                                                style="background-color:#03C03C; color:white">$
+                                                {{totalLifeInsurance}}</label>
+                                        </div>
+                                        <!--  -->
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-6" *ngIf="previousUrl=='/health-profile' || previousUrl=='/quoteBasicInfo'"> 
+                                            <button class="btn btn-success" (click)="save()">Save Your Calculations</button>
+                                        </div>
+                                        <div class="col-md-3"> 
+                                            <button class="btn btn-success" routerLink="/contact">Time to buy</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </ng-container>
+                <div class="card">
+                    <div class="card-body" style="display:flex; justify-content:right">
+                        <!-- <button class="btn btn-success" (click)="save()">Save</button> -->
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

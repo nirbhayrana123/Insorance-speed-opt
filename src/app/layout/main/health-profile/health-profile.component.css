@@ -1,0 +1,20 @@
+.form__text--after {
+    position: absolute;
+    right: 20px;
+    top: 8px;
+}
+
+.select_box {
+    cursor: pointer;
+    color: #2d2a31;
+    padding: 6px 18px;
+    border-radius: 4px;
+    border: 1px solid #d5d4d6;
+    -webkit-box-shadow: 0px 0px 0px 1px #d5d4d6;
+    box-shadow: 0px 0px 0px 1px #d5d4d6;
+    background: #ffffff;
+    line-height: 24px;
+    margin-bottom: 0;
+    min-width: 42px;
+    text-align: center;
+}

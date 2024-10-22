@@ -1,0 +1,35 @@
+.content {
+    margin: 0% 0% 0% 15%;
+}
+
+.container {
+    box-shadow: rgb(0 0 0 / 14%) 3px 3px 14px 5px;
+    padding: 2vh 0vh 2vh 0vh;
+    position: relative;
+    width: 20%;
+    min-height: 286.703px;
+    height: auto;
+    text-align: center;
+    margin: 10% 1% 15vh 0vh;
+    overflow: hidden;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 15px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    color: #0056b3;
+    display: block;
+}
+
+a:hover {
+    color: #2B1D1D;
+    /* text-decoration: none; */
+}
+
+
+@media (min-width: 481px) and (max-width: 768px) {}

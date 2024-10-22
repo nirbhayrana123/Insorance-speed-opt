@@ -1,0 +1,41 @@
+.ethics {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+.ethics h1 {
+    margin-bottom: 15px;
+}
+.ethics h4 {
+    text-align: left;
+    font-size: 35px;
+    font-weight: 500;
+    line-height: 2;
+}
+.ethics p {
+    font-size: 18px;
+    line-height: 2;
+}
+.advertise {
+    padding-left: 20px;
+}
+ul.advertise li {
+    list-style: auto;
+}
+.ethics a {
+    font-size: 20px;
+    color: #5a58ff;
+    text-decoration: underline;
+}
+
+@media only screen and (max-width: 1499px) {
+    .ethics h1 {
+        font-size: 35px;
+    }
+    .ethics h4 {
+        font-size: 30px;
+    }
+    .ethics p {
+        font-size: 17px;
+        line-height: 1.5;
+    }
+    }

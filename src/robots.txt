@@ -1,0 +1,6 @@
+User-agent: *
+Disallow: 
+Disallow: /cgi-bin/
+Allow: Sitemap.xml 
+Allow: Sitemap.HTML 
+Sitemap: http://www.sitemaps.org/schemas/sitemap/0.9

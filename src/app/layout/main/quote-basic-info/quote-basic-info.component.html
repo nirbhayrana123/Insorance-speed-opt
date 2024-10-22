@@ -1,0 +1,225 @@
+<div class="container mt-5">
+    <div class="card">
+        <div class="card-body">
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                <div class="row">
+                    <div class="col-md-2">
+                        <label>Name</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" formControlName="name">
+                        <div *ngIf="f['name'].touched">
+                            <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                                <span class="error">Name cannot be empty</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label>Email</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="text" class="form-control" formControlName="email">
+                        <div *ngIf="f['email'].touched">
+                            <div *ngIf="f['email'].errors && f['email'].errors['required']">
+                                <span class="error">Email cannot be empty</span>
+                            </div>
+                            <div *ngIf="f['email'].errors && f['email'].errors['email']">
+                                <span style="color: red;">Invalid Email</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-2">
+                        <label>Gender</label>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-control" formControlName="gender">
+                            <option value="Male">Male</option>
+                            <option value="Female">Female</option>
+                        </select>
+                        <div *ngIf="f['gender'].touched">
+                            <div *ngIf="f['gender'].errors && f['gender'].errors['required']">
+                                <span class="error">Gender DropDown cannot be Empty</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-md-2">
+                        <label>DOB</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="date" class="form-control" formControlName="dob">
+                        <div *ngIf="f['dob'].touched">
+                            <div *ngIf="f['dob'].errors && f['dob'].errors['required']">
+                                <span class="error">Date of Birth DropDown cannot be Empty</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-2">
+                        <label>Are you a smoker</label>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-control" formControlName="smoker">
+                            <option value="y">Yes</option>
+                            <option value="n">No</option>
+                        </select>
+                        <div *ngIf="f['smoker'].touched">
+                            <div *ngIf="f['smoker'].errors && f['smoker'].errors['required']">
+                                <span class="error">smoker DropDown cannot be Empty</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label>State</label>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-control" formControlName="state">
+                            <option value="Alberta">Alberta</option>
+                            <option value="British Columbia">British Columbia</option>
+                            <option value="Manitoba">Manitoba</option>
+                            <option value="New Brunswick">New Brunswick</option>
+                            <option value="Newfoundland and Labrador">Newfoundland and Labrador</option>
+                            <option value="Northwest Territories">Northwest Territories</option>
+                            <option value="Nova Scotia">Nova Scotia</option>
+                            <option value="Nunavut">Nunavut</option>
+                            <option value="Ontario">Ontario</option>
+                            <option value="Prince Edward Island">Prince Edward Island</option>
+                            <option value="Quebec">Quebec</option>
+                            <option value="Saskatchewan">Saskatchewan</option>
+                            <option value="Yukon">Yukon</option>
+                            <option value="nr">Non resident</option>
+                        </select>
+                        <div *ngIf="f['state'].touched">
+                            <div *ngIf="f['state'].errors && f['state'].errors['required']">
+                                <span class="error">State DropDown cannot be Empty</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-2">
+                        <label>Residency Status</label>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-control" formControlName="resStatus">
+                            <option value="cr">Canadian citizen/resident</option>
+                            <option value="nr">Non resident</option>
+                        </select>
+                        <div *ngIf="f['resStatus'].touched">
+                            <div *ngIf="f['resStatus'].errors && f['resStatus'].errors['required']">
+                                <span class="error">Residency Status DropDown cannot be Empty</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-2">
+                        <label>Coverage For</label>
+                    </div>
+                    <div class="col-md-4">
+                        <select class="form-control" formControlName="cov">
+                            <option value="m">Myself</option>
+                            <option value="mp">Myself & Partner</option>
+                        </select>
+                        <div *ngIf="f['cov'].touched">
+                            <div *ngIf="f['cov'].errors && f['cov'].errors['required']">
+                                <span class="error">Coverage For DropDown cannot be Empty</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-2">
+                        <label>Phone</label>
+                    </div>
+                    <div class="col-md-4">
+                        <input type="number" class="form-control" formControlName="phone">
+                        <div *ngIf="f['phone'].touched">
+                            <div *ngIf="f['phone'].errors && f['phone'].errors['required']">
+                                <span class="error">Phone Number cannot be Empty</span>
+                            </div>
+                            <div *ngIf="f['phone'].errors && f['phone'].errors['minlength']">
+                                <span style="color: red;">Phone must be atleast 10 digits long</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-md-4">
+                        <button type="submit" class="btn btn-primary" [disabled]="form.invalid">Next
+                            <i class="far fa-hand-point-right"></i></button>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+<br><br>
+
+<div class="row justify-content-center card-section" *ngIf="step2">
+    <div class="row">
+        <div class="col-md-6">
+            <span class="category-box" (click)="open(content,'kc')">
+                <label for="coverage" class="h-100 option-select__box">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMzUgMTM1Ij4NCiAgPGRlZnM+DQogICAgPHN0eWxlPg0KICAgICAgLmNscy0xIHsNCiAgICAgICAgZmlsbDogIzI3MzEzMzsNCiAgICAgIH0NCg0KICAgICAgLmNscy0yIHsNCiAgICAgICAgZmlsbDogI2Q3MTY3MTsNCiAgICAgIH0NCg0KICAgICAgLmNscy0zIHsNCiAgICAgICAgZmlsbDogbm9uZTsNCiAgICAgIH0NCiAgICA8L3N0eWxlPg0KICA8L2RlZnM+DQogIDxnIGlkPSJHcm91cF80OCIgZGF0YS1uYW1lPSJHcm91cCA0OCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTg5MiAtMzQzKSI+DQogICAgPGcgaWQ9Ikdyb3VwXzM2IiBkYXRhLW5hbWU9Ikdyb3VwIDM2IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNiAwLjUpIj4NCiAgICAgIDxnIGlkPSJzbGlkZXItdG9vbCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTA0Ljk5NSAzNjcuMzUpIj4NCiAgICAgICAgPGcgaWQ9Ikdyb3VwXzI1IiBkYXRhLW5hbWU9Ikdyb3VwIDI1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg0MS4wMTYgNDcuOTc2KSI+DQogICAgICAgICAgPGcgaWQ9Ikdyb3VwXzI0IiBkYXRhLW5hbWU9Ikdyb3VwIDI0Ij4NCiAgICAgICAgICAgIDxwYXRoIGlkPSJQYXRoXzEzNSIgZGF0YS1uYW1lPSJQYXRoIDEzNSIgY2xhc3M9ImNscy0xIiBkPSJNMjM3LjIxLDI3NC41MDlhMS43NSwxLjc1LDAsMSwwLC41MTMsMS4yMzhBMS43NjEsMS43NjEsMCwwLDAsMjM3LjIxLDI3NC41MDlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjM0LjIyMSAtMjczLjk5NikiLz4NCiAgICAgICAgICA8L2c+DQogICAgICAgIDwvZz4NCiAgICAgICAgPGcgaWQ9Ikdyb3VwXzI3IiBkYXRhLW5hbWU9Ikdyb3VwIDI3IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgwLjAwNSAyOS40MTYpIj4NCiAgICAgICAgICA8ZyBpZD0iR3JvdXBfMjYiIGRhdGEtbmFtZT0iR3JvdXAgMjYiPg0KICAgICAgICAgICAgPHBhdGggaWQ9IlBhdGhfMTM2IiBkYXRhLW5hbWU9IlBhdGggMTM2IiBjbGFzcz0iY2xzLTEiIGQ9Ik0xMDAuNjI3LDE3Ni43NTNINzguNzc4YTE1LjQwNiwxNS40MDYsMCwwLDAtMjcuNzkzLDBINi42NTlhNi42NTQsNi42NTQsMCwxLDAsMCwxMy4zMDdsMzYuMTQzLjAxYTEuNzUxLDEuNzUxLDAsMCwwLDAtMy41bC0zNi4xNDMtLjAxYTMuMTUyLDMuMTUyLDAsMSwxLDAtNi4zSDQ5LjhhMTUuNDA4LDE1LjQwOCwwLDAsMCwyOC45OCw5LjgwNWgyMS44NDlhNi42NTQsNi42NTQsMCwxLDAsMC0xMy4zMDdabS0zNS43NDYsMTguNTZhMTEuOTA2LDExLjkwNiwwLDEsMSwxMS45MDYtMTEuOTA2QTExLjkyLDExLjkyLDAsMCwxLDY0Ljg4MiwxOTUuMzEzWm0zNS43NDYtOC43NTVINzkuOTY2YTE1LjQ2MiwxNS40NjIsMCwwLDAsMC02LjNoMjAuNjYyYTMuMTUyLDMuMTUyLDAsMSwxLDAsNi4zWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTAuMDA1IC0xNjcuOTk4KSIvPg0KICAgICAgICAgIDwvZz4NCiAgICAgICAgPC9nPg0KICAgICAgICA8ZyBpZD0iR3JvdXBfMjkiIGRhdGEtbmFtZT0iR3JvdXAgMjkiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDAuMDA1IDU4LjgzMykiPg0KICAgICAgICAgIDxnIGlkPSJHcm91cF8yOCIgZGF0YS1uYW1lPSJHcm91cCAyOCI+DQogICAgICAgICAgICA8cGF0aCBpZD0iUGF0aF8xMzciIGRhdGEtbmFtZT0iUGF0aCAxMzciIGNsYXNzPSJjbHMtMSIgZD0iTTEwMC42MjgsMzQ0Ljc1OGwtNTcuNjEyLjAyMWExNS40MDYsMTUuNDA2LDAsMCwwLTI3LjgxMiwwSDYuNjU5YTYuNjU0LDYuNjU0LDAsMCwwLDAsMTMuMzA3aDguNTY0YTE1LjQwNiwxNS40MDYsMCwwLDAsMjcuNzczLDBsNTcuNjMxLS4wMjFhNi42NTQsNi42NTQsMCwwLDAsMC0xMy4zMDdaTTYuNjU5LDM1NC41ODNhMy4xNTIsMy4xNTIsMCwxLDEsMC02LjNoNy4zNjNhMTUuNDY3LDE1LjQ2NywwLDAsMCwuMDA5LDYuM1ptMjIuNDUxLDguNzM0YTExLjkwNiwxMS45MDYsMCwxLDEsMTEuOTA2LTExLjkwNkExMS45MiwxMS45MiwwLDAsMSwyOS4xMSwzNjMuMzE4Wm03MS41MTgtOC43NTUtNTYuNDM5LjAyMWExNS40NjcsMTUuNDY3LDAsMCwwLC4wMDktNi4zbDU2LjQzLS4wMjFhMy4xNTIsMy4xNTIsMCwxLDEsMCw2LjNaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMC4wMDUgLTMzNi4wMDMpIi8+DQogICAgICAgICAgPC9nPg0KICAgICAgICA8L2c+DQogICAgICAgIDxnIGlkPSJHcm91cF8zMSIgZGF0YS1uYW1lPSJHcm91cCAzMSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNTkuMzYyIDguNzU1KSI+DQogICAgICAgICAgPGcgaWQ9Ikdyb3VwXzMwIiBkYXRhLW5hbWU9Ikdyb3VwIDMwIj4NCiAgICAgICAgICAgIDxwYXRoIGlkPSJQYXRoXzEzOCIgZGF0YS1uYW1lPSJQYXRoIDEzOCIgY2xhc3M9ImNscy0xIiBkPSJNMzQxLjk4OCw1MC41MTJhMS43NDksMS43NDksMCwxLDAsLjUxMywxLjIzOEExLjc2MywxLjc2MywwLDAsMCwzNDEuOTg4LDUwLjUxMloiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0zMzguOTk5IC00OS45OTkpIi8+DQogICAgICAgICAgPC9nPg0KICAgICAgICA8L2c+DQogICAgICAgIDxnIGlkPSJHcm91cF8zMyIgZGF0YS1uYW1lPSJHcm91cCAzMyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMC4wMDUpIj4NCiAgICAgICAgICA8ZyBpZD0iR3JvdXBfMzIiIGRhdGEtbmFtZT0iR3JvdXAgMzIiPg0KICAgICAgICAgICAgPHBhdGggaWQ9IlBhdGhfMTM5IiBkYXRhLW5hbWU9IlBhdGggMTM5IiBjbGFzcz0iY2xzLTEiIGQ9Ik0xMDEuMTU2LDguNzU1SDY3LjVhMS43NTEsMS43NTEsMCwwLDAsMCwzLjVoMzMuNjUyYTMuMTUyLDMuMTUyLDAsMCwxLDAsNi4zSDQ0LjE5NGExNS40NjIsMTUuNDYyLDAsMCwwLDAtNi4zaDE3YTEuNzUxLDEuNzUxLDAsMSwwLDAtMy41SDQzLjAwNmExNS40MDYsMTUuNDA2LDAsMCwwLTI3Ljc5MywwSDYuNjU5YTYuNjU0LDYuNjU0LDAsMCwwLDAsMTMuMzA3aDguNTU1YTE1LjQwNiwxNS40MDYsMCwwLDAsMjcuNzkzLDBoNTguMTVhNi42NTQsNi42NTQsMCwwLDAsMC0xMy4zMDdaTTE0LjAyNiwxOC41Nkg2LjY1OWEzLjE1MiwzLjE1MiwwLDEsMSwwLTYuM2g3LjM2N2ExNS40NjIsMTUuNDYyLDAsMCwwLDAsNi4zWk0yOS4xMSwyNy4zMTVBMTEuOTA2LDExLjkwNiwwLDEsMSw0MS4wMTYsMTUuNDA4LDExLjkyLDExLjkyLDAsMCwxLDI5LjExLDI3LjMxNVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0wLjAwNSkiLz4NCiAgICAgICAgICA8L2c+DQogICAgICAgIDwvZz4NCiAgICAgIDwvZz4NCiAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNjIiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDYyIiBjbGFzcz0iY2xzLTIiIHdpZHRoPSI0IiBoZWlnaHQ9IjExIiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTI5IDM3NykiLz4NCiAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNjMiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDYzIiBjbGFzcz0iY2xzLTIiIHdpZHRoPSI0IiBoZWlnaHQ9IjExIiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTM1IDM3NykiLz4NCiAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNjQiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDY0IiBjbGFzcz0iY2xzLTIiIHdpZHRoPSI0IiBoZWlnaHQ9IjExIiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTY1IDQwNykiLz4NCiAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNjUiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDY1IiBjbGFzcz0iY2xzLTIiIHdpZHRoPSI0IiBoZWlnaHQ9IjExIiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTcxIDQwNykiLz4NCiAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNjYiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDY2IiBjbGFzcz0iY2xzLTIiIHdpZHRoPSI0IiBoZWlnaHQ9IjExIiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTI5IDQzNikiLz4NCiAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNjciIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDY3IiBjbGFzcz0iY2xzLTIiIHdpZHRoPSI0IiBoZWlnaHQ9IjExIiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTM1IDQzNikiLz4NCiAgICAgIDxnIGlkPSJHcm91cF8zNCIgZGF0YS1uYW1lPSJHcm91cCAzNCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTUuNSkiPg0KICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzcwIiBkYXRhLW5hbWU9IlJlY3RhbmdsZSA3MCIgY2xhc3M9ImNscy0yIiB3aWR0aD0iNCIgaGVpZ2h0PSI0IiByeD0iMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoOTYwLjUgMzU4LjUpIHJvdGF0ZSg5MCkiLz4NCiAgICAgICAgPHJlY3QgaWQ9IlJlY3RhbmdsZV83MyIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgNzMiIGNsYXNzPSJjbHMtMiIgd2lkdGg9IjQiIGhlaWdodD0iNCIgcng9IjIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk2Ni41IDM1OC41KSByb3RhdGUoOTApIi8+DQogICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNzQiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDc0IiBjbGFzcz0iY2xzLTIiIHdpZHRoPSI0IiBoZWlnaHQ9IjQiIHJ4PSIyIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg5NzIuNSAzNTguNSkgcm90YXRlKDkwKSIvPg0KICAgICAgPC9nPg0KICAgICAgPGcgaWQ9Ikdyb3VwXzM1IiBkYXRhLW5hbWU9Ikdyb3VwIDM1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg1My41IDk5KSI+DQogICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNzAtMiIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgNzAiIGNsYXNzPSJjbHMtMiIgd2lkdGg9IjQiIGhlaWdodD0iNCIgcng9IjIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk2MC41IDM1OC41KSByb3RhdGUoOTApIi8+DQogICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNzMtMiIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgNzMiIGNsYXNzPSJjbHMtMiIgd2lkdGg9IjQiIGhlaWdodD0iNCIgcng9IjIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk2Ni41IDM1OC41KSByb3RhdGUoOTApIi8+DQogICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNzQtMiIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgNzQiIGNsYXNzPSJjbHMtMiIgd2lkdGg9IjQiIGhlaWdodD0iNCIgcng9IjIiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDk3Mi41IDM1OC41KSByb3RhdGUoOTApIi8+DQogICAgICA8L2c+DQogICAgPC9nPg0KICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNzgiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDc4IiBjbGFzcz0iY2xzLTMiIHdpZHRoPSIxMzUiIGhlaWdodD0iMTM1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg4OTIgMzQzKSIvPg0KICA8L2c+DQo8L3N2Zz4NCg=="
+                        alt="img" class="category-box__img">
+                    <!-- <a routerLink="/health-profile"> -->
+                    <h4 class="category-box__header">I know how much coverage I
+                        need</h4>
+                    <p class="category-box__para">If you already know what coverage amount you're looking for, you
+                        can
+                        specify the amount later in the flow</p>
+                    <!-- </a> -->
+                </label>
+            </span>
+        </div>
+
+
+        <div class="col-md-6">
+            <span class="category-box" (click)="open(content,'cal')">
+                <label for="coverage" class="h-100 option-select__box">
+                    <img src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHZpZXdCb3g9IjAgMCAxMzUgMTM1Ij4NCiAgPGRlZnM+DQogICAgPHN0eWxlPg0KICAgICAgLmNscy0xIHsNCiAgICAgICAgZmlsbDogbm9uZTsNCiAgICAgIH0NCg0KICAgICAgLmNscy0yIHsNCiAgICAgICAgZmlsbDogIzI3MzEzMzsNCiAgICAgIH0NCg0KICAgICAgLmNscy0zIHsNCiAgICAgICAgZmlsbDogI2Q3MTY3MTsNCiAgICAgIH0NCiAgICA8L3N0eWxlPg0KICA8L2RlZnM+DQogIDxnIGlkPSJHcm91cF80NyIgZGF0YS1uYW1lPSJHcm91cCA0NyIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTQxNCAtMzM3KSI+DQogICAgPHJlY3QgaWQ9IlJlY3RhbmdsZV83NyIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgNzciIGNsYXNzPSJjbHMtMSIgd2lkdGg9IjEzNSIgaGVpZ2h0PSIxMzUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDQxNCAzMzcpIi8+DQogICAgPGcgaWQ9Ikdyb3VwXzIzIiBkYXRhLW5hbWU9Ikdyb3VwIDIzIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSg2OC4yMjkgLTcuOTk5KSI+DQogICAgICA8ZyBpZD0iY2FsY3VsYXRvciIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzY2LjI2IDM1NC45OTkpIj4NCiAgICAgICAgPHBhdGggaWQ9IlBhdGhfMTE2IiBkYXRhLW5hbWU9IlBhdGggMTE2IiBjbGFzcz0iY2xzLTIiIGQ9Ik0yNTkuMzU2LDM1My43NUgyNDQuMzM5YTEuODM5LDEuODM5LDAsMCwwLTEuODM5LDEuODM5djE1LjAxN2ExLjgzOSwxLjgzOSwwLDAsMCwxLjgzOSwxLjgzOWgxNS4wMTdhMS44MzksMS44MzksMCwwLDAsMS44MzktMS44MzlWMzU1LjU4OUExLjgzOSwxLjgzOSwwLDAsMCwyNTkuMzU2LDM1My43NVptLTEuODM5LDE1LjAxN0gyNDYuMTc4VjM1Ny40MjhoMTEuMzM5WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTE5MC40MDEgLTI2Ny4wMikiLz4NCiAgICAgICAgPHBhdGggaWQ9IlBhdGhfMTE3IiBkYXRhLW5hbWU9IlBhdGggMTE3IiBjbGFzcz0iY2xzLTIiIGQ9Ik0xNjguMTA2LDM1My43NUgxNTMuMDg5YTEuODM5LDEuODM5LDAsMCwwLTEuODM5LDEuODM5djE1LjAxN2ExLjgzOSwxLjgzOSwwLDAsMCwxLjgzOSwxLjgzOWgxNS4wMTdhMS44MzksMS44MzksMCwwLDAsMS44MzktMS44MzlWMzU1LjU4OUExLjgzOSwxLjgzOSwwLDAsMCwxNjguMTA2LDM1My43NVptLTEuODM5LDE1LjAxN0gxNTQuOTI4VjM1Ny40MjhoMTEuMzM5WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTEyMS41MjMgLTI2Ny4wMikiLz4NCiAgICAgICAgPHBhdGggaWQ9IlBhdGhfMTE4IiBkYXRhLW5hbWU9IlBhdGggMTE4IiBjbGFzcz0iY2xzLTIiIGQ9Ik0xNjguMTA2LDI2Mi41SDE1My4wODlhMS44MzksMS44MzksMCwwLDAtMS44MzksMS44Mzl2MTUuMDE3YTEuODM5LDEuODM5LDAsMCwwLDEuODM5LDEuODM5aDE1LjAxN2ExLjgzOSwxLjgzOSwwLDAsMCwxLjgzOS0xLjgzOVYyNjQuMzM5QTEuODM5LDEuODM5LDAsMCwwLDE2OC4xMDYsMjYyLjVabS0xLjgzOSwxNS4wMTdIMTU0LjkyOFYyNjYuMTc4aDExLjMzOVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xMjEuNTIzIC0xOTguMTQyKSIvPg0KICAgICAgICA8cGF0aCBpZD0iUGF0aF8xMTkiIGRhdGEtbmFtZT0iUGF0aCAxMTkiIGNsYXNzPSJjbHMtMiIgZD0iTTc2Ljg1NiwzNTMuNzVINjEuODM5QTEuODM5LDEuODM5LDAsMCwwLDYwLDM1NS41ODl2MTUuMDE3YTEuODM5LDEuODM5LDAsMCwwLDEuODM5LDEuODM5SDc2Ljg1NmExLjgzOSwxLjgzOSwwLDAsMCwxLjgzOS0xLjgzOVYzNTUuNTg5QTEuODM5LDEuODM5LDAsMCwwLDc2Ljg1NiwzNTMuNzVabS0xLjgzOSwxNS4wMTdINjMuNjc4VjM1Ny40MjhINzUuMDE3WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTUyLjY0NSAtMjY3LjAyKSIvPg0KICAgICAgICA8cGF0aCBpZD0iUGF0aF8xMjAiIGRhdGEtbmFtZT0iUGF0aCAxMjAiIGNsYXNzPSJjbHMtMiIgZD0iTTM1MC42MDYsMjAyLjVIMzM1LjU4OWExLjgzOSwxLjgzOSwwLDAsMC0xLjgzOSwxLjgzOXY3LjM1NWExLjgzOSwxLjgzOSwwLDAsMCwxLjgzOSwxLjgzOWgxNS4wMTdhMS44MzksMS44MzksMCwwLDAsMS44MzktMS44Mzl2LTcuMzU1QTEuODM5LDEuODM5LDAsMCwwLDM1MC42MDYsMjAyLjVabS0xLjgzOSw3LjM1NUgzMzcuNDI4di0zLjY3OGgxMS4zMzlaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjU5LjI3OSAtMTUyLjg1MikiLz4NCiAgICAgICAgPHBhdGggaWQ9IlBhdGhfMTIxIiBkYXRhLW5hbWU9IlBhdGggMTIxIiBjbGFzcz0iY2xzLTIiIGQ9Ik0yNTkuMzU2LDI2Mi41SDI0NC4zMzlhMS44MzksMS44MzksMCwwLDAtMS44MzksMS44Mzl2MTUuMDE3YTEuODM5LDEuODM5LDAsMCwwLDEuODM5LDEuODM5aDE1LjAxN2ExLjgzOSwxLjgzOSwwLDAsMCwxLjgzOS0xLjgzOVYyNjQuMzM5QTEuODM5LDEuODM5LDAsMCwwLDI1OS4zNTYsMjYyLjVabS0xLjgzOSwxNS4wMTdIMjQ2LjE3OFYyNjYuMTc4aDExLjMzOVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xOTAuNDAxIC0xOTguMTQyKSIvPg0KICAgICAgICA8cGF0aCBpZD0iUGF0aF8xMjIiIGRhdGEtbmFtZT0iUGF0aCAxMjIiIGNsYXNzPSJjbHMtMiIgZD0iTTc2Ljg1NiwyNjIuNUg2MS44MzlBMS44MzksMS44MzksMCwwLDAsNjAsMjY0LjMzOXYxNS4wMTdhMS44MzksMS44MzksMCwwLDAsMS44MzksMS44MzlINzYuODU2YTEuODM5LDEuODM5LDAsMCwwLDEuODM5LTEuODM5VjI2NC4zMzlBMS44MzksMS44MzksMCwwLDAsNzYuODU2LDI2Mi41Wm0tMS44MzksMTUuMDE3SDYzLjY3OFYyNjYuMTc4SDc1LjAxN1oiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC01Mi42NDUgLTE5OC4xNDIpIi8+DQogICAgICAgIDxwYXRoIGlkPSJQYXRoXzEyMyIgZGF0YS1uYW1lPSJQYXRoIDEyMyIgY2xhc3M9ImNscy0yIiBkPSJNMjU5LjM1NiwyMDIuNUgyNDQuMzM5YTEuODM5LDEuODM5LDAsMCwwLTEuODM5LDEuODM5djcuMzU1YTEuODM5LDEuODM5LDAsMCwwLDEuODM5LDEuODM5aDE1LjAxN2ExLjgzOSwxLjgzOSwwLDAsMCwxLjgzOS0xLjgzOXYtNy4zNTVBMS44MzksMS44MzksMCwwLDAsMjU5LjM1NiwyMDIuNVptLTEuODM5LDcuMzU1SDI0Ni4xNzh2LTMuNjc4aDExLjMzOVoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0xOTAuNDAxIC0xNTIuODUyKSIvPg0KICAgICAgICA8cGF0aCBpZD0iU3VidHJhY3Rpb25fMSIgZGF0YS1uYW1lPSJTdWJ0cmFjdGlvbiAxIiBjbGFzcz0iY2xzLTIiIGQ9Ik05MS4zMjcsMTE1LjIzMUg5LjE5M0E5LjIsOS4yLDAsMCwxLDAsMTA2LjAzN1Y0NS41MjJIMy42Nzd2NjAuNTE1YTUuNTIyLDUuNTIyLDAsMCwwLDUuNTE2LDUuNTE2SDkxLjMyN2E1LjUyMiw1LjUyMiwwLDAsMCw1LjUxNi01LjUxNlY2MC42OTRoMy42Nzh2NDUuMzQzQTkuMiw5LjIsMCwwLDEsOTEuMzI3LDExNS4yMzFabTkuMTk0LTY1Ljc3Nkg5Ni44NDNWOS4xOTRhNS41MjIsNS41MjIsMCwwLDAtNS41MTYtNS41MTZIOS4xOTNBNS41MjIsNS41MjIsMCwwLDAsMy42NzcsOS4xOTRWMzUuNDA2SDBWOS4xOTRBOS4yLDkuMiwwLDAsMSw5LjE5MywwSDkxLjMyN2E5LjIsOS4yLDAsMCwxLDkuMTk0LDkuMTk0WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMCAwKSIvPg0KICAgICAgICA8cGF0aCBpZD0iUGF0aF8xMjUiIGRhdGEtbmFtZT0iUGF0aCAxMjUiIGNsYXNzPSJjbHMtMyIgZD0iTTM1MC42MDYsMjYyLjVIMzM1LjU4OWExLjgzOSwxLjgzOSwwLDAsMC0xLjgzOSwxLjgzOXYzNy4zODlhMS44MzksMS44MzksMCwwLDAsMS44MzksMS44MzloMTUuMDE3YTEuODM5LDEuODM5LDAsMCwwLDEuODM5LTEuODM5VjI3OS4wNDlhMS44MzksMS44MzksMCwxLDAtMy42NzgsMHYyMC44NEgzMzcuNDI4VjI2Ni4xNzhoMTEuMzM5djUuNTE2YTEuODM5LDEuODM5LDAsMSwwLDMuNjc4LDB2LTcuMzU1QTEuODM5LDEuODM5LDAsMCwwLDM1MC42MDYsMjYyLjVaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjU5LjI3OSAtMTk4LjE0MikiLz4NCiAgICAgICAgPHBhdGggaWQ9IlBhdGhfMTI2IiBkYXRhLW5hbWU9IlBhdGggMTI2IiBjbGFzcz0iY2xzLTIiIGQ9Ik0xNDMuOTcyLDQwSDYxLjgzOUExLjgzOSwxLjgzOSwwLDAsMCw2MCw0MS44MzlWNzEuODcyYTEuODM5LDEuODM5LDAsMCwwLDEuODM5LDEuODM5SDc2Ljg1NmExLjgzOSwxLjgzOSwwLDEsMCwwLTMuNjc4SDYzLjY3OFY0My42NzhoNzguNDU1VjcwLjAzNEg4NC4yMTFhMS44MzksMS44MzksMCwxLDAsMCwzLjY3OGg1OS43NjFhMS44MzksMS44MzksMCwwLDAsMS44MzktMS44MzlWNDEuODM5QTEuODM5LDEuODM5LDAsMCwwLDE0My45NzIsNDBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtNTIuNjQ1IC0zMC4xOTMpIi8+DQogICAgICAgIDxwYXRoIGlkPSJQYXRoXzEyNyIgZGF0YS1uYW1lPSJQYXRoIDEyNyIgY2xhc3M9ImNscy0zIiBkPSJNMzM2LjgzOSw3My42NzhoNy4zNTVhMS44MzksMS44MzksMCwwLDAsMC0zLjY3OGgtNy4zNTVhMS44MzksMS44MzksMCwxLDAsMCwzLjY3OFoiIHRyYW5zZm9ybT0idHJhbnNsYXRlKC0yNjAuMjIyIC01Mi44MzcpIi8+DQogICAgICAgIDxwYXRoIGlkPSJQYXRoXzEyOCIgZGF0YS1uYW1lPSJQYXRoIDEyOCIgY2xhc3M9ImNscy0zIiBkPSJNMzM2LjgzOSwxMzMuNjc4aDcuMzU1YTEuODM5LDEuODM5LDAsMCwwLDAtMy42NzhoLTcuMzU1YTEuODM5LDEuODM5LDAsMSwwLDAsMy42NzhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjYwLjIyMiAtOTguMTI3KSIvPg0KICAgICAgICA8cGF0aCBpZD0iUGF0aF8xMjkiIGRhdGEtbmFtZT0iUGF0aCAxMjkiIGNsYXNzPSJjbHMtMyIgZD0iTTMzNSw5Ni43NDJhMS44MzksMS44MzksMCwwLDAsMy42NzgsMHYtNC45YTEuODM5LDEuODM5LDAsMCwwLTMuNjc4LDBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjYwLjIyMiAtNjcuOTM0KSIvPg0KICAgICAgICA8cGF0aCBpZD0iUGF0aF8xMzAiIGRhdGEtbmFtZT0iUGF0aCAxMzAiIGNsYXNzPSJjbHMtMyIgZD0iTTMzNSw5Ni43NDJhMS44MzksMS44MzksMCwwLDAsMy42NzgsMHYtNC45YTEuODM5LDEuODM5LDAsMCwwLTMuNjc4LDBaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjUyLjQ4MyAtNjcuOTM0KSIvPg0KICAgICAgICA8cGF0aCBpZD0iUGF0aF8xMzEiIGRhdGEtbmFtZT0iUGF0aCAxMzEiIGNsYXNzPSJjbHMtMyIgZD0iTTMzNi44MzksNzMuNjc4aDcuMzU1YTEuODM5LDEuODM5LDAsMCwwLDAtMy42NzhoLTcuMzU1YTEuODM5LDEuODM5LDAsMSwwLDAsMy42NzhaIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgtMjc1LjcwMSAtNTIuODM3KSIvPg0KICAgICAgICA8cGF0aCBpZD0iUGF0aF8xMzIiIGRhdGEtbmFtZT0iUGF0aCAxMzIiIGNsYXNzPSJjbHMtMyIgZD0iTTMzNi44MzksMTMzLjY3OGg3LjM1NWExLjgzOSwxLjgzOSwwLDAsMCwwLTMuNjc4aC03LjM1NWExLjgzOSwxLjgzOSwwLDEsMCwwLDMuNjc4WiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI3NS43MDEgLTk4LjEyNykiLz4NCiAgICAgICAgPHBhdGggaWQ9IlBhdGhfMTM0IiBkYXRhLW5hbWU9IlBhdGggMTM0IiBjbGFzcz0iY2xzLTMiIGQ9Ik0zMzUsOTYuNzQyYTEuODM5LDEuODM5LDAsMCwwLDMuNjc4LDB2LTQuOWExLjgzOSwxLjgzOSwwLDAsMC0zLjY3OCwwWiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoLTI2Ny45NjIgLTY3LjkzNCkiLz4NCiAgICAgIDwvZz4NCiAgICAgIDxnIGlkPSJHcm91cF8yMCIgZGF0YS1uYW1lPSJHcm91cCAyMCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMzQ1Ljc3MiAzODIuODQ1KSI+DQogICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNTYiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDU2IiBjbGFzcz0iY2xzLTMiIHdpZHRoPSI0LjMiIGhlaWdodD0iMjQuOTM4IiByeD0iMi4xNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTAuMzE5KSIvPg0KICAgICAgICA8cmVjdCBpZD0iUmVjdGFuZ2xlXzU3IiBkYXRhLW5hbWU9IlJlY3RhbmdsZSA1NyIgY2xhc3M9ImNscy0zIiB3aWR0aD0iNC4zIiBoZWlnaHQ9IjI1Ljc5OCIgcng9IjIuMTUiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDI1Ljc5OCAxMC4zMTkpIHJvdGF0ZSg5MCkiLz4NCiAgICAgIDwvZz4NCiAgICAgIDxnIGlkPSJHcm91cF8yMiIgZGF0YS1uYW1lPSJHcm91cCAyMiIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoNDY0LjQ1IDQwMC4zMzcpIj4NCiAgICAgICAgPGcgaWQ9Ikdyb3VwXzIxIiBkYXRhLW5hbWU9Ikdyb3VwIDIxIiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNi4zMjIgMTIuMTgxKSByb3RhdGUoLTE4MCkiPg0KICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNTctMiIgZGF0YS1uYW1lPSJSZWN0YW5nbGUgNTciIGNsYXNzPSJjbHMtMyIgd2lkdGg9IjQuMyIgaGVpZ2h0PSIxNi4zMjIiIHJ4PSIyLjE1IiB0cmFuc2Zvcm09InRyYW5zbGF0ZSgxNi4zMjIgMCkgcm90YXRlKDkwKSIvPg0KICAgICAgICAgIDxyZWN0IGlkPSJSZWN0YW5nbGVfNTkiIGRhdGEtbmFtZT0iUmVjdGFuZ2xlIDU5IiBjbGFzcz0iY2xzLTMiIHdpZHRoPSI0LjMiIGhlaWdodD0iMTYuMzIyIiByeD0iMi4xNSIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTYuMzIyIDApIHJvdGF0ZSg5MCkiLz4NCiAgICAgICAgPC9nPg0KICAgICAgICA8ZWxsaXBzZSBpZD0iRWxsaXBzZV8zIiBkYXRhLW5hbWU9IkVsbGlwc2UgMyIgY2xhc3M9ImNscy0zIiBjeD0iMi41OCIgY3k9IjIuNTgiIHJ4PSIyLjU4IiByeT0iMi41OCIgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTEuNDE2IDE1LjgxMSkgcm90YXRlKDEyMCkiLz4NCiAgICAgICAgPGVsbGlwc2UgaWQ9IkVsbGlwc2VfNCIgZGF0YS1uYW1lPSJFbGxpcHNlIDQiIGNsYXNzPSJjbHMtMyIgY3g9IjIuNTgiIGN5PSIyLjU4IiByeD0iMi41OCIgcnk9IjIuNTgiIHRyYW5zZm9ybT0idHJhbnNsYXRlKDExLjQxNiAyLjU4KSByb3RhdGUoMTIwKSIvPg0KICAgICAgPC9nPg0KICAgIDwvZz4NCiAgPC9nPg0KPC9zdmc+DQo="
+                        alt="img" class="category-box__img">
+                    <!-- <a routerLink="/quote/calculator"> -->
+                    <h4 class="category-box__header">Help me calculate my overall coverage needs</h4>
+                    <p class="category-box__para">Answer a few simple questions and we'll recommend a personalized
+                        coverage amount for you.</p>
+                    <!-- </a> -->
+                </label>
+            </span>
+        </div>
+    </div>
+</div>
+<br /><br />
+
+
+
+
+
+<ng-template #content let-c="close" let-d="dismiss">
+    <div class="modal-header">
+        <h4 class="modal-title" id="modal-basic-title">Disclaimer</h4>
+        <!-- <button type="button" class="btn-close" aria-label="Close" (click)="d('Cross click')"></button> -->
+    </div>
+    <div class="modal-body">
+        <p>Your data is secure with us. We do not sell your data. *All fields required. By clicking “Submit”, I as a
+            client consent to the collection and use of my name and email address by the Estate Nest Inc. Pursuant to
+            the Canadian Anti-Spam Legislation (CASL), you authorize Estate Nest Inc. to call, fax, and communicate with
+            you electronically as may be required from time to time as a result of our relationship as Advisor and
+            client. I can unsubscribe at any time by following the unsubscribe instructions at the bottom of any emails
+            if I receive. For more information on our privacy practices, code of ethics, and terms of use.</p>
+    </div>
+    <div class="modal-footer">
+        <button type="button" class="btn btn-outline-dark" (click)="c('Save click'); disclaimer('Agree')">Agree</button>
+        <button type="button" class="btn btn-outline-dark"
+            (click)="c('Save click'); disclaimer('Disagree')">Disagree</button>
+
+    </div>
+</ng-template>

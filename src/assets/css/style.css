@@ -1,0 +1,3827 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+img {
+    max-width: 100%;
+}
+
+a {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.005em;
+    color: #2B1D1D;
+}
+
+li {
+    list-style: none;
+}
+
+a:hover {
+    color: #0056b3;
+    text-decoration: none;
+    align-items: center;
+}
+
+/************modal-css*****************************/
+.flexbutton {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.hidden {
+    display: none;
+}
+
+main {
+    overflow: hidden;
+}
+
+.company-logo img {
+    width: 230px !important;
+    margin: 0 auto;
+    height: 75px;
+}
+section#shadow-host-companion {
+    padding: 0;
+}
+.all-logo h3 {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: 'Macondo', cursive;
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.car-content h4 img {
+    width: 100px;
+    margin-left: auto;
+    float: right;
+}
+
+.copyright a {
+    font-size: 16px;
+    margin: 0px 4px;
+}
+
+.an-overview .Contact-form p {
+    font-size: 9px;
+    line-height: 1.5;
+    margin-top: 20px;
+    color: #3d3b3b;
+}
+
+/******************animation***************/
+svg {
+    width: 35%;
+    overflow: visible;
+    max-width: 350px;
+    margin: 0 auto;
+    display: block;
+}
+
+.right_boy {
+    opacity: 0;
+    transform: translatex(45%);
+    animation: real-man 1.5s ease-in-out forwards;
+}
+
+#Right_boy_hand {
+    transform: rotate(-22deg);
+    transform-origin: 100% 0%;
+    animation: real-man 1s ease-in-out forwards 1.4s;
+}
+
+#bag {
+    transform: rotate(-8deg);
+    transform-origin: 82% 53%;
+    animation: real-man 2.5s ease-in-out infinite alternate;
+}
+
+.left_boy {
+    opacity: 0;
+    transform: translatex(-45%);
+    animation: real-man 1.5s ease-in-out forwards;
+}
+
+#left_boy_hand {
+    transform: rotate(35deg);
+    transform-origin: 5% 25%;
+    animation: real-man 1s ease-in-out forwards 1.4s;
+}
+
+#Left_boy_bag {
+    transform: rotate(8deg);
+    transform-origin: 0% 50%;
+    animation: real-man 2.5s ease-in-out infinite alternate;
+}
+
+@keyframes real-man {
+    to {
+        opacity: 1;
+        transform: translate(0);
+    }
+}
+
+.client_fil9 {
+    fill: black;
+    fill-rule: nonzero;
+}
+
+.client_fil15 {
+    fill: #100743;
+    fill-rule: nonzero;
+}
+
+.client_fil0 {
+    fill: #160a5b;
+    fill-rule: nonzero;
+}
+
+.client_fil3 {
+    fill: #25136b;
+    fill-rule: nonzero;
+}
+
+.client_fil6 {
+    fill: #300901;
+    fill-rule: nonzero;
+}
+
+.client_fil7 {
+    fill: #433a9b;
+    fill-rule: nonzero;
+}
+
+.client_fil8 {
+    fill: #44dadf;
+    fill-rule: nonzero;
+}
+
+.client_fil13 {
+    fill: #453c9e;
+    fill-rule: nonzero;
+}
+
+.client_fil16 {
+    fill: #473a7a;
+    fill-rule: nonzero;
+}
+
+.client_fil14 {
+    fill: #4ca4db;
+    fill-rule: nonzero;
+}
+
+.client_fil5 {
+    fill: #5e1c17;
+    fill-rule: nonzero;
+}
+
+.client_fil10 {
+    fill: #6760ae;
+    fill-rule: nonzero;
+}
+
+.client_fil11 {
+    fill: #8eafc1;
+    fill-rule: nonzero;
+}
+
+.client_fil2 {
+    fill: #d8d8d8;
+    fill-rule: nonzero;
+}
+
+.client_fil4 {
+    fill: #ddac9e;
+    fill-rule: nonzero;
+}
+
+.client_fil1 {
+    fill: #e8c8ba;
+    fill-rule: nonzero;
+}
+
+.client_fil12 {
+    fill: white;
+    fill-rule: nonzero;
+}
+
+
+
+.arroplantop {
+    width: 60px;
+    height: 60px;
+    position: relative;
+    animation: mymove 5s infinite;
+}
+
+
+
+@keyframes mymove {
+    from {
+        bottom: -298px;
+        left: 45px;
+    }
+
+    50% {
+        bottom: 100px !important;
+        left: 45px;
+    }
+
+    /* ignored */
+    to {
+        bottom: 100px;
+        left: 45px;
+    }
+}
+
+.catha {
+    width: 300px;
+    height: 260px;
+    position: relative;
+    animation: example infinite;
+    animation-duration: 3s;
+}
+
+@keyframes example {
+    0% {
+        top: 0px;
+        left: 160px;
+    }
+
+    25% {
+        top: 109px;
+        left: 160px;
+    }
+
+    75% {
+        top: 0;
+        left: 160px;
+    }
+
+    100% {
+        top: 0;
+        left: 160px;
+    }
+}
+
+/******************animation***************/
+
+
+
+/************modal-css*****************************/
+p {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: -0.035em;
+    color: #000000;
+}
+
+h1 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 45px;
+    line-height: 55px;
+    letter-spacing: 0.035em;
+    color: #000000;
+}
+
+h2 {
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: bold;
+}
+
+h3 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 49px;
+    letter-spacing: 0.035em;
+    color: #000000;
+}
+
+h4 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 29px;
+    text-align: center;
+    align-items: center;
+    letter-spacing: 0.035em;
+    color: #000000;
+}
+
+h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.035em;
+    color: #070707;
+}
+
+h5 {
+    font-family: 'Montserrat', sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 29px;
+}
+
+a.btn-1.comon-btn::before,
+a.btn-1.comon-btn::after {
+    border-color: transparent;
+    -webkit-transition: all 0.25s;
+    transition: all 0.25s;
+    border-style: solid;
+    border-width: 0;
+    content: "";
+    height: 24px;
+    position: absolute;
+    width: 24px;
+}
+
+a.btn-1.comon-btn::after {
+    border-bottom-width: 2px;
+    border-color: #ffe600;
+    border-right-width: 2px;
+    bottom: -5px;
+    right: -5px;
+}
+
+a.btn-1.comon-btn::before {
+    border-color: #ffe600;
+    border-left-width: 2px;
+    border-top-width: 2px;
+    left: -5px;
+    top: -5px;
+}
+
+.happy h4 small,
+.optimized h4 small {
+    font-size: 70%;
+}
+
+.investmentheadding {
+    text-align: center;
+    margin: 30px 0px;
+}
+
+a.btn-1.comon-btn:hover::before,
+a.btn-1.comon-btn:hover::after {
+    width: 100%;
+    height: 100%;
+}
+
+button.btn-1.comon-btn {
+    background-color: #FFE600;
+    padding: 12px 27px;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    box-shadow: 1px 2px 3px 0 rgb(0 0 0 / 40%);
+    position: relative;
+    border: none;
+}
+
+button.btn-1.comon-btn.submited {
+    margin-top: 30px;
+}
+
+a.btn-1.comon-btn {
+    background-color: #FFE600;
+    padding: 12px 27px;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    box-shadow: 1px 2px 3px 0 rgb(0 0 0 / 40%);
+    position: relative;
+}
+
+a:hover {
+    color: black;
+}
+
+/*=================mutii-form==================*/
+
+.filipbacksheap {
+    position: relative;
+}
+
+.filipbacksheap::before {
+    content: "";
+    width: 110px;
+    height: 110px;
+    background-color: #111340;
+    position: absolute;
+    top: -14px;
+    bottom: 0;
+    left: -16px;
+    border-radius: 100px;
+}
+
+.filipbackcontact {
+    padding-right: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    background-color: #ef7a36;
+    width: 415px;
+    height: 80px;
+    border-radius: 50px;
+}
+
+.filipbackcontact span.user {
+    background-color: #f4a273;
+    position: absolute;
+    width: 80px;
+    height: 80px;
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 100px;
+}
+
+.filipbackcontact p {
+    margin-bottom: 0;
+    margin-left: 100px;
+    color: #fff;
+}
+
+.filipbacksheap::after {
+    content: "";
+    position: absolute;
+    width: 0;
+    height: 0;
+    border-right: 9px solid transparent;
+    border-bottom: 29px solid #111340;
+    border-left: 29px solid transparent;
+    transform: rotate(351deg);
+    top: 62px;
+    left: -30px;
+}
+
+.maneg-sineup {
+    margin-top: 5px;
+}
+
+.mange-sin {
+    margin-top: 100px;
+}
+
+.contact-main .relations-contact p {
+    font-size: 16px;
+    line-height: 2.12;
+}
+
+.phonesection {
+    background: #eee;
+    padding: 20px;
+}
+
+
+.filipbackcontact span.user i.fas.fa-user-friends {
+    font-size: 30px;
+}
+
+/*================================================*/
+h3.estment-hold {
+    text-align: center;
+}
+
+.Wealth-data {
+    text-align: center;
+    padding-bottom: 40px;
+}
+
+h2.retirements {
+    text-align: center;
+    padding: 25px 0;
+}
+
+.car-content.registeredd {
+    margin-bottom: 25px;
+}
+
+
+
+
+
+
+
+
+
+/*================================================*/
+
+
+
+.banner h1 {
+    font-size: 35px;
+    text-align: center;
+    width: 1000px;
+    padding-top: 15px;
+}
+
+#msform {
+    text-align: center;
+    position: relative;
+    margin-top: 30px;
+}
+
+#msform fieldset {
+    background: white;
+    border: 0 none;
+    border-radius: 0px;
+    box-shadow: 0 0 15px 1px rgba(0, 0, 0, 0.4);
+    padding: 20px 30px;
+    box-sizing: border-box;
+    width: 100%;
+    margin: 0 0;
+
+    position: relative;
+}
+
+.Estate-planning {
+    padding-bottom: 0;
+}
+
+#msform fieldset:not(:first-of-type) {
+    display: none;
+}
+
+#msform input,
+#msform textarea {
+    padding: 15px;
+    border: 1px solid #ccc;
+    border-radius: 0px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: montserrat;
+    color: #2C3E50;
+    font-size: 13px;
+}
+
+#msform input:focus,
+#msform textarea:focus {
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    box-shadow: none !important;
+    border: 1px solid #ee0979;
+    outline-width: 0;
+    transition: All 0.5s ease-in;
+    -webkit-transition: All 0.5s ease-in;
+    -moz-transition: All 0.5s ease-in;
+    -o-transition: All 0.5s ease-in;
+}
+
+#msform .action-button {
+    width: 100px;
+    background: #ee0979;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button:hover,
+#msform .action-button:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #ee0979;
+}
+
+#msform .action-button-previous {
+    width: 100px;
+    background: #C5C5F1;
+    font-weight: bold;
+    color: white;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 10px 5px;
+    margin: 10px 5px;
+}
+
+#msform .action-button-previous:hover,
+#msform .action-button-previous:focus {
+    box-shadow: 0 0 0 2px white, 0 0 0 3px #C5C5F1;
+}
+
+
+.fs-title {
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #2C3E50;
+    margin-bottom: 10px;
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+
+
+#progressbar {
+    margin-bottom: 30px;
+    overflow: hidden;
+    counter-reset: step;
+}
+
+#progressbar li {
+    list-style-type: none;
+    color: white;
+    text-transform: uppercase;
+    font-size: 9px;
+    width: 33.33%;
+    float: left;
+    position: relative;
+    letter-spacing: 1px;
+}
+
+#progressbar li:before {
+    content: counter(step);
+    counter-increment: step;
+    width: 46px;
+    height: 46px;
+    line-height: 46px;
+    display: block;
+    font-size: 22px;
+    color: #333;
+    background: white;
+    border-radius: 25px;
+    margin: 0 auto 10px auto;
+    font-weight: 600;
+}
+
+#progressbar li:after {
+    content: '';
+    width: 100%;
+    height: 2px;
+    background: white;
+    position: absolute;
+    left: -50%;
+    top: 9px;
+    z-index: -1;
+}
+
+#progressbar li:first-child:after {
+    content: none;
+}
+
+#progressbar li.active:before,
+#progressbar li.active:after {
+    background: #ee0979;
+    color: white;
+}
+
+.dme_link {
+    margin-top: 30px;
+    text-align: center;
+}
+
+.dme_link a {
+    background: #FFF;
+    font-weight: bold;
+    color: #ee0979;
+    border: 0 none;
+    border-radius: 25px;
+    cursor: pointer;
+    padding: 5px 25px;
+    font-size: 12px;
+}
+
+.dme_link a:hover,
+.dme_link a:focus {
+    background: #C5C5F1;
+    text-decoration: none;
+}
+
+
+
+/*=================mutii-form==================*/
+
+.background {
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    position: relative;
+    z-index: 9;
+}
+
+@media only screen and (min-width: 1600px) {
+    .container {
+        max-width: 1440px;
+        margin: 0 auto;
+    }
+}
+
+section.message {
+    padding-bottom: 0;
+}
+
+section {
+    padding: 50px 0px;
+    padding-bottom: 130px;
+}
+
+main {
+    overflow: hidden;
+}
+
+/***************************************header-astat***************/
+.close-menu {
+    display: none;
+}
+
+.hamberger span.line {
+    height: 3px;
+    width: 25px;
+    background-color: black;
+    display: block;
+    margin: 3px;
+}
+
+.hamberger {
+    display: none;
+}
+
+.logo {
+    width: 55px;
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    padding: 10px 0px;
+    width: 100%;
+    /* justify-content: space-between; */
+    top: 15vh;
+}
+
+.charge {
+    margin-top: 80px;
+}
+
+.Estate-planning h5 {
+    margin: 30px 0px;
+}
+
+.Estate-planning p span {
+    margin-right: 10px;
+}
+
+h4.cursive {
+    padding: 0px 110px;
+    line-height: 1.5;
+    font-family: 'Macondo', cursive;
+    font-weight: bold;
+}
+
+h4.cursive.rtu {
+    margin-top: 50px;
+    margin-bottom: 100px;
+}
+
+header {
+    width: 100%;
+    z-index: 999;
+    position: sticky;
+    left: 0;
+    right: 0;
+    top: 0;
+    background-color: #faebd7;
+}
+
+.main-header ul.manu {
+    display: flex;
+    align-items: center;
+    margin-bottom: 0;
+    padding-left: 50px;
+}
+
+.main-header ul li a {
+    font-size: 12px;
+    text-transform: uppercase;
+    font-weight: 500;
+    letter-spacing: 0.035em;
+}
+
+.main-header ul.manu li {
+    padding: 10px 15px;
+}
+
+ul li {
+    list-style: none;
+}
+
+/***************************************header-end***************/
+
+
+/***************************************banner-astat***************/
+.Insurance-the {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+.insurance p span {
+    width: 50px;
+    height: 50px;
+    display: block;
+    margin: 0 auto;
+    background-color: #ffe600;
+    border-radius: 100px;
+    padding: 9px;
+}
+
+.our-testimonials h4 {
+    padding-top: 50px;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 'Macondo', cursive;
+}
+
+.Wisdom a.btn-1.comon-btn {
+    margin-top: 30px;
+    display: inline-block;
+}
+
+.Wisdom {
+    text-align: center;
+}
+
+.banner h3 {
+    font-size: 20px;
+    text-align: center;
+    font-family: 'Macondo', cursive;
+}
+
+.banner {
+    z-index: 0;
+    text-align: left;
+    padding-bottom: 50px;
+}
+
+.revord {
+    padding-top: 40px;
+}
+
+.search-defalt {
+    margin-bottom: 0;
+    display: flex;
+    align-items: center;
+}
+
+.search-defalt li a i.fas.fa-search {
+    margin-right: 18px;
+    font-size: 17px;
+    background-color: #0388ff94;
+    padding: 10px;
+    border-radius: 30px;
+}
+
+.cutaling {
+    align-items: center;
+}
+
+.banner p {
+    padding: 20px 0px;
+    font-size: 15px;
+    line-height: 2;
+}
+
+.any-business {
+    padding: 0;
+    padding-bottom: 50px;
+}
+
+.investmentheadding h3 {
+    font-family: 'Macondo', cursive;
+}
+
+.living-b h3 {
+    font-family: 'Macondo', cursive;
+}
+
+.segreated-we h2 {
+    font-family: 'Macondo', cursive;
+    text-align: left;
+}
+
+.living-c h3 {
+    font-family: 'Macondo', cursive;
+}
+
+/***************************************banner-end***************/
+
+
+/***************************************insurance-astat***************/
+section.Insurance-section {
+    padding-bottom: 80px;
+}
+
+.text-center {
+    text-align: center !important;
+    font-weight: 400;
+    padding-bottom: 45px;
+    font-family: 'Macondo', cursive;
+}
+
+.types h4 span {
+    margin-top: 23px;
+    display: block;
+}
+
+.insuranceslider-main h2 img {
+    width: 400px;
+    margin: 40px auto;
+    text-align: center;
+    display: block;
+}
+
+.insuranceslider-main h3 {
+    padding-bottom: 40px;
+}
+
+
+
+
+
+
+
+
+
+.insurance {
+    text-align: center;
+    padding: 60px 0px;
+    padding-top: 0;
+}
+
+.insurance h3 {
+    padding-bottom: 15px;
+    font-weight: bold;
+    font-family: 'Macondo', cursive;
+}
+
+.insurance p {
+    line-height: 30px;
+    font-size: 18px;
+}
+
+.customers {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.center {
+    width: 40%;
+}
+
+.happy.aos-init p {
+    color: #141414;
+    line-height: 30px;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.optimized h4 {
+    font-weight: 500;
+    padding-top: 20px;
+    line-height: 40px;
+    font-size: 30px;
+}
+
+.happy h4 {
+    font-weight: 500;
+    line-height: 40px;
+    font-size: 30px;
+}
+
+.optimized p {
+    color: #141414;
+    line-height: 30px;
+    padding-top: 20px;
+    font-size: 15px;
+    font-weight: 500;
+}
+
+.happy {
+    padding: 25px;
+    text-align: center;
+    width: 45%;
+    z-index: -1;
+}
+
+.customers .happy:first-child:after {
+    content: "";
+    width: 822px;
+    height: 372px;
+    position: absolute;
+    background-image: url(../images/three-line.png);
+    top: 130px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    left: 260px;
+    z-index: 99;
+    transform: rotate(7deg);
+}
+
+.customers .optimized:nth-child(4)::after {
+    content: "";
+    width: 420px;
+    height: 329px;
+    position: absolute;
+    background-image: url(../images/first-line.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: 99;
+    transform: rotate(7deg);
+    top: -160px;
+    right: 268px;
+}
+
+.optimized {
+    padding: 25px;
+    width: 45%;
+    text-align: center;
+    margin-top: 350px;
+}
+
+.customers .optimized:nth-child(2)::after {
+    content: "";
+    width: 700px;
+    height: 640px;
+    position: absolute;
+    background-image: url(../images/two-line.png);
+    top: 313px;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    right: 417px;
+    transform: rotate(-8deg);
+}
+
+/*****************************************************filp**/
+
+
+.card {
+    border: none;
+}
+
+.card-HoverBox {
+    min-height: 250px;
+}
+
+.front,
+.back {
+    width: 100%;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    position: relative;
+    backface-visibility: hidden;
+}
+
+.content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    transition: transform 0.5s linear;
+    transform-style: preserve-3d;
+}
+
+.back {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    text-align: center;
+    background-color: transparent;
+    transform: rotateY(180deg);
+    position: absolute;
+    top: 0;
+}
+
+.card:hover .content {
+    transform: rotateY(180deg);
+}
+
+
+/***************************************insurance-END*************filp**/
+
+
+/***************************************any-business***************/
+.blog {
+    text-align: center;
+    padding-bottom: 30px;
+
+}
+
+.blog h3 {
+    padding-bottom: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: 'Macondo', cursive;
+}
+
+.blog p {
+    color: #504B4B;
+    line-height: 29px;
+}
+
+.Term-Insurance li {
+    color: white;
+    line-height: 22px;
+    font-size: 13px;
+    padding-bottom: 5px;
+    text-align: left;
+    list-style: disc;
+}
+
+.Term-Insurance ul {
+    padding-left: 25px;
+}
+
+.Term-Insurance {
+    background-color: #158773;
+    padding: 24px 12px;
+    width: 100%;
+}
+
+.Term-Insurance h5 {
+    color: white;
+    font-size: 18px;
+}
+
+a.button.butns {
+    line-height: 43px;
+    width: 145px;
+    height: 43px;
+    box-shadow: 1px 2px 3px 0 rgb(0 0 0 / 40%);
+}
+
+.critical {
+    background-size: 240px;
+    /* margin: auto 45px; */
+    text-align: center;
+    display: block;
+}
+
+
+
+/*=================about-slider======================*/
+.author-info.p-t20 a.btn-1.comon-btn {
+    display: inline-block;
+}
+
+.about-svg .item {
+    padding-right: 20px;
+}
+
+.ow-img {
+    margin: 50px;
+    margin-top: 0;
+}
+
+.about-svg {
+    position: relative;
+}
+
+.item h4 {
+    text-align: left;
+    font-size: 23px;
+}
+
+
+.message h3 {
+    text-align: center;
+    font-weight: bold;
+    font-size: 45px;
+    padding-bottom: 40px;
+    padding-top: 20px;
+    font-family: 'Macondo', cursive;
+}
+
+.message h3 span {
+    background-image: url(../images/water.png);
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    display: inline-block;
+    padding: 10px 40px;
+}
+
+.author-signature {
+    display: table-cell;
+    vertical-align: middle;
+}
+
+.author-info.p-t20 {
+    width: 100%;
+}
+
+.author-signature h4 {
+    text-align: left;
+    padding-top: 20px;
+}
+
+.Life-Insurance img {
+    width: 150px !important;
+    margin: 0 auto;
+}
+
+.provided .owl-dots {
+    position: relative;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 20px;
+}
+
+.provided .owl-dots button.owl-dot {
+    width: 18px;
+    height: 18px;
+    background-color: #28B2FF;
+    display: inline-block;
+    margin: 5px;
+    border-radius: 100px;
+}
+
+/***************************************any-business***************/
+
+
+/***************************************how-does***************/
+.how-does {
+    padding: 50px 0px;
+}
+
+.lt-work {
+    text-align: center;
+}
+
+.lt-work a.btn-1.comon-btn {
+    margin-top: 35px;
+    display: inline-block;
+}
+
+.lt-work h3 {
+    text-align: left;
+
+    color: rgb(0, 0, 0);
+    padding-bottom: 5px;
+    font-family: 'Macondo', cursive;
+}
+
+a.button {
+    font-size: 14px;
+    background-color: #73E6D2;
+    display: inline-block;
+    position: relative;
+    z-index: 1;
+    width: 160px;
+    height: 47px;
+    text-align: center;
+    line-height: 45px;
+    overflow: hidden;
+}
+
+a.button.uote {
+    margin-top: 20px;
+}
+
+a.button::after {
+    content: "";
+    background-color: #ffe600;
+    width: 0%;
+    position: absolute;
+    left: 0;
+    right: 0;
+    transition: 0.5s;
+    bottom: 0;
+    height: 100%;
+    z-index: -1;
+    box-shadow: 1px 2px 3px 0 rgb(0 0 0 / 40%);
+}
+
+.banner p span {
+    font-size: 20px;
+}
+
+a.button:hover::after {
+    width: 100%;
+}
+
+.lt-work h6 {
+    text-align: left;
+    color: #141414;
+    padding-bottom: 50px;
+    position: relative;
+}
+
+.lt-work ul li p {
+    text-align: left;
+    color: #141414;
+}
+
+.lt-work ul li {
+    position: relative;
+    padding-left: 30px;
+}
+
+.lt-work ul li::after {
+    position: absolute;
+    content: "";
+    width: 10px;
+    height: 10px;
+    border-radius: 100px;
+    background-color: #b7afaf;
+    left: -2px;
+    top: 13px;
+}
+
+.lt-work h6::after {
+    position: absolute;
+    content: "";
+    border-bottom: 3px solid #3ADCFF;
+    width: 103px;
+    left: 0;
+    top: 45px;
+}
+
+/***************************how-does***************/
+
+.Contact-form iframe.contactinptry {
+    height: 900px;
+}
+
+iframe.footer-form {
+    height: 700px;
+}
+
+iframe.financial {
+    height: 570px;
+}
+
+.wpcf7-response-output {
+    margin: 2em 0.5em 1em;
+    padding: 0.2em 1em;
+    border: 2px solid #00a0d2;
+    margin: 0;
+}
+
+/*************************our-testimonials***************/
+.simply {
+    background-color: #F9FAFB;
+    padding: 80px;
+    border-radius: 25px;
+
+}
+
+.Possession {
+    position: absolute;
+    width: 243px;
+    margin: 0 auto;
+    text-align: center;
+    left: 0;
+    right: 0;
+    top: -95px;
+}
+
+.romanisa {
+    display: flex;
+    border-radius: 20px;
+    width: 100%;
+    padding: 31px 11px;
+    background-color: #F1F1F1;
+}
+
+.ellipse {
+    width: 100%;
+    padding: 2px 10px;
+}
+
+.simply h3 {
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 15px;
+    font-size: 30px;
+}
+
+.consultant p {
+    font-style: italic;
+    font-weight: 500;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    color: #141414;
+    font-size: 15px;
+}
+
+.consultant h5 {
+    letter-spacing: 0.035em;
+    font-size: 18px;
+}
+
+.consultant h6 {
+    color: #9C0A0A;
+}
+
+.aling-center {
+    align-items: center;
+}
+
+.consultant ul {
+    display: flex;
+    justify-content: space-between;
+}
+
+.consultant ul li a i {
+    font-size: 26px;
+    color: #eba0a0;
+    transform: rotate(180deg);
+}
+
+.elite-slider .owl-dots {
+    position: relative;
+    left: 0;
+    right: 0;
+    text-align: center;
+    top: 20px;
+}
+
+.elite-slider .owl-dots button.owl-dot {
+    width: 8px;
+    height: 8px;
+    background-color: black;
+    display: inline-block;
+    margin: 4px;
+    border-radius: 100px;
+}
+
+/****************our-testimonials***************/
+
+
+/******************footer-astat***************/
+.footerId {
+    padding-top:
+        70px;
+    background: #f9f9f9;
+    padding-bottom:
+        30px;
+    position: relative;
+}
+
+.footr-logo img {
+    max-width:
+        100px;
+}
+
+h4.footHead {
+    margin-bottom: 20px !important;
+    margin-top: 20px;
+}
+
+.footerId ul.footermenu li a {
+    font-size: 18px;
+    font-family: 'Montserrat', sans-serif;
+    color: #141414;
+    transition: all 0.4s;
+}
+
+.footerId ul.footermenu li {
+    line-height: 1.5;
+    margin: 0.5rem 0 0 2rem;
+}
+
+.email-addres a {
+    font-size: 18px;
+    display: block;
+    text-align: left;
+    color: #141414;
+    line-height: 2;
+}
+
+.email-addres a i {
+    color: #fc0;
+}
+
+.email-addres a i {
+    margin-right: 15px;
+}
+
+.follow {
+    margin-top:
+        40px;
+}
+
+.social.Newsocial {
+    position: absolute;
+    left:
+        154px;
+    top:
+        22px;
+    width: 100%;
+}
+
+.social.Newsocial ul {
+    display: flex;
+}
+
+.social.Newsocial ul li {
+    margin: 0 15px;
+    position: relative;
+}
+
+.social.Newsocial ul li:first-child {
+    transform: rotate(-45deg);
+    top: 13px;
+}
+
+.social.Newsocial ul li:nth-child(2) {
+    position: absolute;
+    top: 52px;
+    left: 64px;
+}
+
+.social.Newsocial ul li:nth-child(3) {
+    position: absolute;
+    left: -5px;
+    top: 93px;
+}
+
+.social.Newsocial ul li:nth-child(4) {
+    position: absolute;
+    left: 142px;
+    top: 39px;
+}
+
+.social.Newsocial ul li:nth-child(5) {
+    top: -13px;
+    left: 20px;
+}
+
+.mick {
+    float: left;
+    width: 174px;
+}
+
+.copyright {
+    text-align: center;
+    padding-top: 20px;
+}
+
+.hero__discover-cta {
+    position: absolute;
+    top: 98%;
+    left: 31%;
+    line-height: 1;
+    color: #050050;
+    transform: rotate(0deg);
+    cursor: pointer;
+    display: inline-block;
+    z-index: 9;
+}
+
+.hero__discover-cta img {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
+    width: 240px;
+    top: 37px;
+}
+
+.Request img {
+    max-width: 177px;
+    margin-top: -72px;
+}
+
+.Request h4 {
+    text-transform: uppercase;
+    color: #ca9c6a;
+    text-align: center;
+    letter-spacing: 0.2em;
+    font-size: 15px;
+}
+
+.contactForm .form-group input.form-control {
+    border: 1px solid #ca9c6a;
+}
+
+.Request input[type="text"].form-control,
+.Request input[type="text"].form-control:focus,
+.Request textarea.form-control {
+    background: #fff;
+    border: 1px solid #ca9c6a;
+    resize: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.form-group.tresty input[type="submit"].form-control.btn_1 {
+    padding: 15px 30px;
+    transition: 1s;
+    border-radius: 53px;
+    background-color: #ff9000;
+    border: none;
+    font-size: 16px !important;
+}
+
+.form-group.tresty input[type="submit"].form-control.btn_1:hover {
+    box-shadow: 0px 0 0 #ff9000 inset;
+    color: #fff;
+}
+
+
+.social i.fab {
+    width: 30px;
+    height: 30px;
+    background: #4f6c9f;
+    padding: 5px;
+    border-radius: 4px;
+    line-height: 19px;
+    text-align: center;
+    color: #fff;
+    font-size: 16px;
+    box-shadow: 4px -5px 0 0px #ccc;
+    transition: 0.5s all ease;
+}
+
+.social i.fab.fa-facebook {
+    color: #fff;
+    background: #4f6c9f;
+    box-shadow: 4px -5px 0 0px #a8cff0;
+}
+
+.social ul li {
+    margin-bottom: 25px;
+    position: relative;
+}
+
+.social i.fab.fa-twitter {
+    color: #fff;
+    background: #4db4e7;
+    box-shadow: 4px -5px 0 0px #d1ecff;
+}
+
+.social i.fab.fa-linkedin {
+    color: #fff;
+    background: #3a81a9;
+    box-shadow: 4px -5px 0 0px #5ba6d0;
+}
+
+.social i.fab.fa-instagram {
+    color: #424242;
+}
+
+.social i.fab.fa-whatsapp {
+    background: #1dea8c;
+    box-shadow: 4px -5px 0 0px #24d0b8;
+}
+
+.social ul li:after {
+    content: "";
+    position: absolute;
+    bottom: -24px;
+    height: 23px;
+    width: 1px;
+    background: #eee;
+    left: 14px;
+}
+
+.social ul li:last-child:after,
+.social ul li::after {
+    opacity: 0;
+}
+
+.our_facilitics_area .single_feature {
+    background: #fff;
+    border: 1px solid #ebebeb;
+    padding: 32px 20px 65px 20px;
+}
+
+.social i.fab.fa-twitter {
+    transform: rotate(0deg);
+}
+
+h4.footHead {
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.btn_1,
+.btn_1:focus,
+h4.footHead {
+    padding: 15px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #ff9000;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    -webkit-transition: 1s;
+    transition: 1s;
+    border-radius:
+        53px;
+    box-shadow: 270px 0 0 #e23b41 inset;
+}
+
+.btn_1:hover,
+h4.footHead:hover {
+    box-shadow: 0px 0 0 #ff9000 inset;
+    color: #fff;
+}
+
+h4.footHead {
+    margin-bottom:
+        20px !important;
+    margin-top:
+        20px;
+}
+
+.btn_1,
+.btn_1:focus,
+h4.footHead {
+    padding:
+        15px 30px;
+    font-size: 16px;
+    font-weight: 500;
+    background-color: #ff9000;
+    color: #fff;
+    display: inline-block;
+    text-transform: uppercase;
+    -webkit-transition: 1s;
+    transition: 1s;
+    border-radius: 53px;
+    box-shadow: 270px 0 0 #e23b41 inset;
+}
+
+.footer-socail-icon {
+    position: relative;
+}
+
+.Request .form-control.btn_1 {
+    text-decoration: none;
+    width: 200px;
+    margin: 0 auto;
+    display: block;
+    position: relative;
+}
+
+/*******************footer-END***************/
+
+
+/****************About-start***************/
+
+body.about-page .main-header {
+    padding: 8px 0px;
+}
+
+.banner-About {
+    height: 730px;
+}
+
+.banner-About.contactbner {
+    height: 362px;
+    background-size: 94% 100%;
+    background-position: center;
+}
+
+.aboutr {
+    background-size: 100% 100%;
+}
+
+.banner-About h1 {
+    color: #ffffff;
+    font-weight: 700;
+}
+
+.banner-About a.one {
+    color: #73E6D2;
+}
+
+.banner-About a {
+    color: white;
+}
+
+.message-s p {
+    color: #000000;
+    padding-bottom: 20px;
+    line-height: 27px;
+}
+
+.message-s h2 {
+    padding-bottom: 30px;
+}
+
+.dot {
+    padding-left: 250px;
+    padding-bottom: 40px;
+}
+
+.message-s {
+    border-bottom: 1px solid #C4C4C4;
+    padding-bottom: 40px;
+}
+
+.provided h2 {
+    text-align: center;
+    flex-wrap: wrap;
+    width: 50%;
+    margin: 0 auto;
+    font-family: 'Macondo', cursive;
+}
+
+.provided {
+    padding: 40px 0px;
+}
+
+.aboutsl {
+    padding: 30px 0px;
+    width: 40%;
+    margin: 0 auto;
+}
+
+.Life-Insurance {
+    background: #E2EAF5;
+    border-radius: 10px;
+    text-align: center;
+    padding: 26px 0px;
+    min-height: 430px;
+}
+
+.Life-Insurance:hover {
+    background: #003478;
+}
+
+.Life-Insurance p {
+    font-weight: normal;
+    line-height: 26px;
+    text-align: center;
+    text-transform: capitalize;
+    color: #484848;
+    padding: 10px 15px 40px 15px;
+}
+
+section.video-main {
+    padding-top: 50px;
+    padding-bottom: 0;
+}
+
+.Life-Insurance:hover h5,
+.Life-Insurance:hover p {
+    color: white;
+}
+
+.video {
+    width: 100%;
+    height: 50%;
+    margin: 0 auto;
+}
+
+.video iframe {
+    width: 100%;
+    height: 100%;
+    border: 2px solid black;
+}
+
+.blue-img {
+    height: 250px;
+    position: absolute;
+    background-size: 1118px;
+    background-position: right;
+    width: 100%;
+    justify-content: space-around;
+    margin-top: -50px;
+    padding-left: 231px;
+}
+
+.investment-planning {
+    background-size: 100%;
+    margin: 0;
+    height: 790px;
+}
+
+
+.video-right h4 {
+    font-weight: 700;
+    line-height: 24px;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+    padding-bottom: 10px;
+    padding-right: 143px;
+}
+
+.video-right h5 {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    color: #FFFFFF;
+}
+
+.Life-Insurance h5 {
+    padding-top: 10px;
+}
+
+.backi {
+    background-size: 1072px;
+}
+
+/*******(A) TIMELINE CONTAINER start**********/
+
+section.malta-history {
+    background: #fbfcff;
+    padding-bottom: 30px;
+}
+
+.alt-vtl {
+    position: relative;
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 60px 0px;
+}
+
+.alt-vtl::before {
+    content: "";
+    width: 2px;
+    background-color: #C4C4C4;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 50%;
+}
+
+.alt-vtl::after {
+    content: "Start";
+    width: 104px;
+    height: 104px;
+    background-color: #73E6D2;
+    position: absolute;
+    top: -50px;
+    bottom: 0;
+    left: 42%;
+    border-radius: 50px;
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 100px;
+    text-align: center;
+    letter-spacing: 0.035em;
+    color: #FFFFFF;
+}
+
+.green::after {
+    content: "";
+    width: 38px;
+    height: 38px;
+    background-color: #46B651;
+    position: absolute;
+    top: 110px;
+    bottom: 0;
+    left: 283px;
+    border-radius: 50px;
+}
+
+.alt-event:hover {
+    background-color: #73e6d2;
+}
+
+.alt-event p:hover {
+    color: #000000;
+}
+
+.alt-event {
+    padding: 20px;
+    width: 73%;
+    position: relative;
+    left: -182px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 9px rgb(0 0 0 / 13%);
+    border-radius: 10px;
+    margin: 20px 0px;
+    transition: 1s;
+}
+
+.provided-company {
+    position: relative;
+    margin-bottom: 50px;
+    padding-top: 5px;
+}
+
+.center-rok img {
+    width: 300px;
+}
+
+section.roceket {
+    padding: 0;
+}
+
+.center-rok {
+    padding: 50px 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.right {
+    left: 58%;
+    margin: 40px 0px;
+}
+
+.alt-event h6 {
+    font-weight: 700;
+    margin-bottom: 15px;
+    text-align: right;
+}
+
+.alt-event p {
+    line-height: 30px;
+    text-align: right;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    color: #575252;
+}
+
+.alt-event.right h6,
+.right p {
+    text-align: left;
+}
+
+.alt-event.right::before {
+    border-right-color: #dbf0ff;
+    border-left: 0;
+    left: auto;
+    right: 100%;
+    top: 20%;
+}
+
+.alt-event::after {
+    top: 43%;
+    left: 473px;
+}
+
+.alt-event.right::after {
+    top: 42%;
+    left: auto;
+    right: 474px;
+}
+
+.widget-wrap {
+    width: 100%;
+    margin: 0 auto;
+}
+
+#code-boxx {
+    font-weight: 600;
+    margin-top: 50px;
+}
+
+#code-boxx a {
+    display: inline-block;
+    padding: 5px;
+    text-decoration: none;
+    background: #b90a0a;
+    color: #fff;
+}
+
+.alt-event::after,
+.alt-event.right::after {
+    content: "";
+    background: #FFE600;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    position: absolute;
+}
+
+.Established {
+    text-align: right;
+}
+
+.green {
+    position: relative;
+}
+
+.alt-event::before {
+    content: "1990";
+    text-align: left;
+    position: absolute;
+    left: 130%;
+    right: 0;
+    top: 38%;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.035em;
+}
+
+.alt-event.right::before {
+    content: "1990";
+    text-align: left;
+    position: absolute;
+    left: -195px;
+    top: 38%;
+    font-weight: 700;
+    font-size: 18px;
+    letter-spacing: 0.035em;
+}
+
+/*******(A) TIMELINE CONTAINER end***************/
+
+/********************About-end******************/
+
+section.blog-section {
+    background-color: #fbfcff;
+}
+
+.main-blog {
+    box-shadow: 6px 6px 15px rgb(0 0 0 / 13%);
+}
+
+.blog-content {
+    padding: 25px;
+    background-color: #fff;
+}
+
+.admin {
+    display: flex;
+    align-items: center;
+    padding: 20px 0px;
+}
+
+.admin p {
+    padding-left: 10px;
+    margin-bottom: 0;
+    color: #777777;
+}
+
+.admin p strong {
+    font-weight: 700;
+    font-size: 15px;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    color: #73E6D2;
+    line-height: 27px;
+}
+
+.blog-content p {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    color: #777777;
+}
+
+a.button.lorip {
+    border: 1px solid #C5C5C5;
+    border-radius: 5px;
+    background-color: white;
+    width: 150px;
+    height: 43px;
+    line-height: 40px;
+}
+
+nav ul.pagination {
+    justify-content: center;
+}
+
+.pagination>.active>a {
+    background: #ffe600;
+    color: #000000;
+}
+
+ul.pagination li a i {
+    line-height: 44px;
+}
+
+ul.pagination li a:hover {
+    background-color: #ffe600;
+    color: #000000;
+}
+
+ul.pagination li a {
+    background-color: #fff;
+    box-shadow: 0 0 5px rgb(0 0 0 / 10%);
+    color: #000000;
+    margin: 0 5px 5px;
+    display: inline-block;
+    font-size: 17px;
+    width: 45px;
+    height: 45px;
+    text-align: center;
+    line-height: 44px;
+}
+
+
+/********************Blog-end**********************/
+
+/********************details-start**********************/
+
+.details-ch img {
+    width: 100%;
+}
+
+.blog-content h4 {
+    font-weight: 700;
+    font-size: 25px;
+    text-transform: capitalize;
+    text-align: left;
+}
+
+.Enim-ad {
+    background: #FE876A;
+    border-radius: 13px;
+    padding: 50px 10px 50px 65px;
+    margin-top: 30px;
+    border-left: 10px solid #28B2FF;
+}
+
+.Enim-ad p {
+    font-size: 16px;
+    line-height: 28px;
+    color: #FFFFFF;
+}
+
+
+/********************search-astat**********************/
+
+
+.search-box {
+    border: 1px solid #b1b1b1;
+    width: 100%;
+}
+
+.example input[type=text] {
+    padding: 15px;
+    font-size: 18px;
+    border: 0px solid grey;
+    width: 80%;
+    background: #f1f1f1;
+}
+
+.example button {
+    width: 20%;
+    padding: 15px;
+    background: #2196F3;
+    color: white;
+    font-size: 17px;
+    border: 0px solid grey;
+    cursor: pointer;
+}
+
+.example button:hover {
+    background: #0b7dda;
+}
+
+/********************search-end**********************/
+ul.Standard li {
+    display: flex;
+    padding-bottom: 15px;
+    border-bottom: 1px solid #B8B8B8;
+    margin-top: 19px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+ul.Standard li a {
+    font-weight: 500;
+    border: 1px solid #B8B8B8;
+    text-align: center;
+    border-radius: 30px;
+    width: 38px;
+    height: 38px;
+    line-height: 39px;
+}
+
+.main-search h5 {
+    padding: 25px 0px;
+}
+
+.Populartex h5 {
+    padding: 0;
+    font-size: 19px;
+}
+
+.Populartex {
+    padding-left: 17px;
+}
+
+.Popular {
+    display: -webkit-inline-box;
+    border-bottom: 1px solid #B8B8B8;
+    width: 100%;
+    padding-top: 20px;
+}
+
+.Populartex p {
+    font-size: 16px;
+    font-weight: 500;
+}
+
+.tags {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+ul.Standard li a:hover {
+    background-color: #73E6D2;
+    color: black;
+}
+
+.tags a {
+    font-weight: 400;
+    font-size: 15px;
+    border: 1px solid #8b8a8a;
+    padding: 10px 24px;
+    margin: 3px;
+    text-align: center;
+    border-radius: 5px;
+    color: black;
+}
+
+/********************Contact-end**********************/
+
+/********************Contact-astat**********************/
+
+section.Contact {
+    padding-top: 0;
+}
+
+.Contact-form {
+    margin-top: 5px;
+}
+
+.call-main {
+    padding: 60px 0px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 14px 2px #c6c6c6;
+    border-radius: 10px;
+    margin-top: 100px;
+}
+
+
+.Contact-form h4 {
+    text-align: left;
+    padding-bottom: 16px;
+    font-family: 'Macondo', cursive;
+}
+
+.Contact-form input.form-control {
+    margin-bottom: 10px;
+    padding: 12px 12px;
+}
+
+.Contact-form textarea#validationTextarea {
+    padding-bottom: 80px;
+    margin-bottom: 35px;
+}
+
+.Contact-form a.view-contact {
+    font-size: 15px;
+    background: #2FCBB0;
+    border-radius: 8px;
+    color: #fff;
+    padding: 15px 25px;
+}
+
+.inner h4.sub-line {
+    font-size: 20px;
+    text-align: left;
+}
+
+.call-main {
+    padding: 50px 0px;
+    margin-bottom: 50px;
+}
+
+.inner ul li {
+    position: relative;
+}
+
+.coll-box {
+    display: flex;
+    border-bottom: 2px solid #C4C4C4;
+    width: 80%;
+    padding-bottom: 25px;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    position: relative;
+    z-index: 1;
+}
+
+
+.box-icon i {
+    border: 2px solid blue;
+    width: 50px;
+    height: 50px;
+    font-size: 23px;
+    text-align: center;
+    line-height: 42px;
+    border-radius: 50px;
+    color: #2b42c7;
+    margin-right: 15px;
+}
+
+.box-content p {
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    color: #777777;
+}
+
+.box-content p strong {
+    font-weight: 700;
+    font-size: 17px;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    color: #26B199;
+    line-height: 27px;
+}
+
+
+/********************Contact-end**********************/
+
+
+/********************Investment-astat**********************/
+
+.Investment {
+    padding: 0;
+}
+
+.icon-back {
+    padding: 60px 0px;
+}
+
+.best-services h5 {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.035em;
+}
+
+.best-services h2 {
+    font-weight: 700;
+    letter-spacing: 0.035em;
+    margin-bottom: 50px;
+}
+
+.life-box {
+    padding: 25px 15px;
+    width: 265px;
+    height: 229px;
+    background: #FFFFFF;
+    box-shadow: 0px 0px 24px rgb(0 0 0 / 29%);
+    border-radius: 10px;
+    margin-bottom: 20px;
+}
+
+.life-box h5 {
+    padding-top: 15px;
+}
+
+.life-box p {
+    font-size: 14px;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+}
+
+.segreated-we {
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.segreated-wep {
+    font-weight: 500;
+    font-size: 18px;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+    color: #5C5B5B;
+    line-height: 26px;
+    margin-top: 15px;
+}
+
+.Insurance-maintitle {
+    text-align: center;
+    margin-bottom: 80px;
+}
+
+.Insurance-maintitle h2 {
+    line-height: 50px;
+    letter-spacing: 0.035em;
+    font-family: 'Macondo', cursive;
+}
+
+.peace-box {
+    text-align: center;
+}
+
+.peace-box h5 {
+    font-size: 25px;
+    letter-spacing: 0.035em;
+    color: #003478;
+    padding: 12px 0px;
+}
+
+.peace-box p {
+    font-weight: 500;
+    line-height: 29px;
+    letter-spacing: 0.015em;
+    text-transform: capitalize;
+    color: #4C4C4C;
+}
+
+.protect-after {
+    position: relative;
+    text-align: left;
+    background-size: 55%;
+    background-position: right;
+    justify-content: end;
+    padding: 70px 50px;
+    overflow: hidden;
+}
+
+.inner h3 {
+    font-size: 22px;
+    line-height: 1.5;
+}
+
+.protect-content {
+    z-index: 9;
+    position: relative;
+    width: 50%;
+}
+
+.coverages {
+    text-align: center;
+    padding: 0 0 40px 0;
+}
+
+.lifeline-img {
+    position: absolute;
+    right: 0;
+    bottom: -38px;
+    width: 200px;
+}
+
+.car-content ul li {
+    list-style: none;
+    text-align: left;
+    padding: 5px 18px;
+    position: relative;
+}
+
+.car-content ul li::after {
+    position: absolute;
+    width: 8px;
+    height: 8px;
+    left: 0;
+    background-color: #2fcbb0;
+    content: "";
+    top: 14px;
+    border-radius: 100px;
+}
+
+.coverages h3 {
+    font-size: 30px;
+}
+
+.coverages img {
+    width: 300px;
+}
+
+.inner h4.sub-line br {
+    display: none;
+}
+
+.protect-content h4 br {
+    display: none;
+}
+
+a.drop-us {
+    padding-bottom: 14px;
+    display: block;
+}
+
+.flekimg {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.protect-content h4 {
+    text-align: left;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 37px;
+    letter-spacing: 0.015em;
+}
+
+.protect-content p {
+    line-height: 22px;
+    letter-spacing: 0.015em;
+    text-transform: capitalize;
+    padding: 17px 0px;
+}
+
+.protect-after::after {
+    content: "";
+    position: absolute;
+    background-color: #b9d8f73b;
+    height: 100%;
+    width: 90%;
+    top: 0;
+    border-radius: 15px;
+    left: 113px;
+    right: 0;
+}
+
+.protect-img {
+    position: absolute;
+    left: 0;
+    top: -70px;
+    z-index: 9;
+    width: 40%;
+}
+
+.inner {
+    background: #fff;
+    box-shadow: 0 0 64px 0 rgb(45 45 45 / 10%);
+    padding-bottom: 80px;
+    padding-top: 120px;
+    padding-right: 40px;
+    padding-left: 40px;
+}
+
+.protect-content a {
+    background: #FFE600;
+    border-radius: 8px;
+    color: white;
+    display: block;
+    width: 190px;
+    height: 60px;
+    text-align: center;
+    line-height: 58px;
+}
+
+.inner ul li::after {
+    position: absolute;
+    background-color: #000;
+    width: 10px;
+    height: 10px;
+    content: "";
+    left: -30px;
+    border-radius: 100px;
+    top: 10px;
+}
+
+.inner ul li {
+    position: relative;
+}
+
+.types {
+    position: relative;
+    display: flex;
+    padding: 50px 0px;
+    justify-content: center;
+    margin-bottom: 70px;
+}
+
+.inner ul {
+    padding-left: 25px;
+}
+
+.types>h4 {
+    padding-right: 100px;
+    font-size: 30px;
+    line-height: 35px;
+    text-align: right;
+    position: relative;
+    width: 720px;
+}
+
+.an-overview .Contact-form {
+    margin-top: 40px;
+}
+
+.types p {
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    color: #000000;
+}
+
+.types>h4::after {
+    content: "";
+    position: absolute;
+    height: 90px;
+    background: #3C4DA7;
+    width: 5px;
+    top: 8px;
+    right: 50px;
+}
+
+.car-content {
+    border: 2px solid #28cb78;
+    padding: 20px;
+    border-radius: 0px 40px 0px 40px;
+}
+
+.car-content.carbx {
+    border: 10px solid #2fcbb0;
+}
+
+
+
+.car-insurance {
+    padding: 0;
+}
+
+.Aliquam {
+    position: relative;
+}
+
+
+.car-box {
+    position: relative;
+}
+
+.living-c h3 {
+    color: #0682f9;
+}
+
+.flekimg .living-b:first-child h3 {
+    color: #0682f9;
+}
+
+.flekimg .living-b:last-child h3 {
+    color: #265f00;
+}
+
+.Living-Benefits .living-c h3,
+.Living-Benefits .car-content h4,
+.Living-Benefits .car-content p {
+    color: #265f00;
+}
+
+.car-content h4 {
+    font-weight: 500;
+    font-size: 22px;
+    text-align: left;
+    color: #0682f9;
+}
+
+.car-content p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 21px;
+    color: #0682f9;
+}
+
+.car-content a {
+    font-weight: 500;
+    text-transform: capitalize;
+    color: #0245C7;
+}
+
+.insuranceslider-main .item img {
+    width: 100px !important;
+    margin: 0 auto;
+}
+
+.inner h2.sub-line {
+    font-size: 30px;
+    font-family: 'Macondo', cursive;
+}
+
+.insuranceslider-main {
+    text-align: center;
+    position: relative;
+}
+
+.insuranceslider-main::after {
+    content: "";
+    position: absolute;
+    width: 250px;
+    height: 5px;
+    left: 0;
+    top: -20px;
+    background: #FE7A6B;
+    margin: 0 auto;
+    right: 0;
+}
+
+.car-insurance .insuranceslider-main {
+    padding-bottom: 80px;
+}
+
+.insuranceslider-main h2 {
+    font-size: 30px;
+    letter-spacing: 0.035em;
+    margin-bottom: 13px
+}
+
+.insuranceslider-main p {
+    line-height: 22px;
+    letter-spacing: 0.035em;
+    text-transform: capitalize;
+}
+
+
+/********************Investment-end**********************/
+
+/********************GET IN TOUCH-astat**********************/
+.touch p {
+    line-height: 28px;
+    letter-spacing: 0.005em;
+    text-transform: capitalize;
+    padding-bottom: 40px;
+}
+
+
+.touch {
+    padding: 0px 0px;
+}
+
+.touch-bakblu {
+    background: #25A4FF;
+    padding: 20px 0px;
+}
+
+.segreated-we.bottomSections {
+    padding-bottom: 80px;
+    padding-top: 0;
+}
+
+.segreated-we.bottomSections .car-content {
+    text-align: left;
+}
+
+button.btn-1.comon-btn.submited,
+input.form-control.btn_1 {
+    cursor: pointer;
+}
+
+/********************GET IN TOUCH-end**********************/
+
+
+/********************GET IN TOUCH-end**********************/
+
+@media only screen and (max-width: 1499px) {
+    .main-header ul.manu li {
+        padding: 10px 9px;
+    }
+
+    .main-header ul li a {
+        font-size: 12px;
+    }
+
+    .logo {
+        width: 57px;
+    }
+
+    .banner-About {
+        height: 457px;
+    }
+
+    .living-b h3 {
+        font-size: 22px;
+    }
+
+    .segreated-we h2 {
+        font-size: 30px;
+    }
+
+    section.invetmente-fucher {
+        padding-bottom: 20px;
+    }
+
+    .banner-About.contactbner {
+        height: 445px;
+        background-size: 85% 100%;
+    }
+
+    section.Contact {
+        padding-top: 50px;
+    }
+}
+
+
+@media only screen and (max-width: 1199px) {
+
+    .main-header ul.manu {
+        padding-left: 25px;
+    }
+
+    .main-header {
+        justify-content: space-between;
+    }
+
+    .logo {
+        width: 60px;
+    }
+
+    .text-center {
+        padding-bottom: 30px;
+    }
+
+    .map iframe {
+        width: 100% !IMPORTANT;
+    }
+
+    .main-header ul.manu li {
+        padding: 20px 5px;
+    }
+
+    a.btn-1.comon-btn {
+        padding: 10px 10px;
+        font-size: 15px;
+    }
+
+    .Life-Insurance {
+        width: 100%;
+        ;
+        padding: 20px 0px;
+        height: 440px;
+    }
+
+    .banner-About {
+        height: 500px;
+    }
+
+    .life-box {
+        width: 100%;
+    }
+
+
+    .filipbackcontact {
+        width: 345px;
+    }
+
+    h1 {
+        font-size: 35px;
+    }
+
+    .banner p {
+        line-height: 1.5;
+        padding: 10px 0px;
+    }
+
+    section {
+        padding: 40px 0px;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+
+
+    .Term-Insurance h5 {
+        font-size: 15px;
+    }
+
+    .Term-Insurance p {
+        line-height: 17px;
+        letter-spacing: 0;
+    }
+
+
+    .customers .happy:first-child:after {
+        width: 770px;
+        height: 324px;
+        top: 110px;
+        left: 160px;
+        z-index: 99;
+        transform: rotate(18deg);
+    }
+
+    .customers .optimized:nth-child(2)::after {
+        width: 582px;
+        height: 642px;
+        top: 225px;
+        right: 297px;
+        transform: rotate(6deg);
+    }
+
+    .customers .optimized:nth-child(4)::after {
+        width: 386px;
+        height: 305px;
+        top: -201px;
+        right: 193px;
+    }
+
+}
+
+@media only screen and (max-width: 991px) {
+    br {
+        display: none;
+    }
+
+    h3 {
+        font-size: 30px;
+    }
+
+    h4 {
+        font-size: 23px;
+    }
+
+    p {
+        font-size: 15px;
+    }
+
+    .insurance h3 {
+        padding-bottom: 0px;
+    }
+
+    .insurance p {
+        line-height: 25px;
+    }
+
+    .happy.aos-init.aos-animate p {
+        line-height: 24px;
+        padding-top: 7px;
+    }
+
+    .optimized.aos-init.aos-animate p {
+        line-height: 24px;
+        padding-top: 7px;
+    }
+
+    .main-header ul li a {
+        font-size: 12px;
+    }
+
+    .main-header ul.manu li {
+        padding: 20px 10px;
+    }
+
+    ul.search-defalt li a i.fas.fa-search {
+        margin-right: 15px;
+        font-size: 10px;
+    }
+
+    .logo {
+        width: 65px;
+    }
+
+    .main-header ul.manu {
+        padding-left: 0;
+        flex-wrap: wrap;
+        position: fixed;
+        background-color: #158773;
+        width: 60%;
+        left: -100%;
+        right: 0;
+        top: 0;
+        padding: 84px 30px 0;
+        transition: 1s;
+        display: block;
+        height: 100vh;
+        z-index: 999;
+        
+    }
+
+    .banner {
+        height: auto;
+        padding: 140px 0px;
+    }
+
+    h1 {
+        font-size: 30px;
+    }
+
+    .banner h6 {
+        font-size: 15px;
+    }
+
+    section {
+        padding: 30px 0px;
+    }
+
+    .blog h3 {
+        margin: 0;
+    }
+
+    .Term-Insurance p {
+        line-height: 14px;
+        padding-bottom: 0px;
+    }
+
+    .Term-Insurance h5 {
+        font-size: 13px;
+    }
+
+    .critical h5 {
+        font-size: 13px;
+    }
+
+    .critical {
+        background-size: 175px;
+        padding: 35px 0px;
+    }
+
+    .critical img {
+        width: 100px;
+    }
+
+    .Term-Insurance {
+        padding: 18px 10px;
+    }
+
+    .lt-work h6 {
+        font-size: 12px;
+    }
+
+    .lt-work h6::after {
+        border-bottom: 2px solid #3ADCFF;
+        width: 100px;
+        top: 25px;
+    }
+
+    .lt-work ul li::after {
+        width: 8px;
+        height: 8px;
+        left: 0px;
+        top: 9px;
+    }
+
+    .lt-work ul li {
+        padding-left: 22px;
+    }
+
+    .simply {
+        padding: 50px;
+
+    }
+
+    .quote a {
+        font-size: 12px;
+        padding: 10px 20px;
+    }
+
+    .main-footer i {
+        width: 30px;
+        height: 30px;
+        font-size: 10px;
+        line-height: 0.4;
+    }
+
+    .consultant h6 {
+        font-size: 13px;
+        line-height: 8px;
+    }
+
+    .consultant ul li a i {
+        font-size: 15px;
+        padding-left: 20px;
+    }
+
+    .romanisa {
+        border-radius: 14px;
+        padding: 28px 5px;
+    }
+
+    .consultant ul {
+        margin: 0;
+    }
+
+    .main-footer p {
+        line-height: 17px;
+    }
+
+    .main-footer ul li {
+        margin-top: 5px;
+    }
+
+    .footer h4 {
+        margin-bottom: 24px;
+    }
+
+    ul.example {
+        padding-top: 0px;
+    }
+
+    .main-footer ul li a {
+        font-size: 14px;
+    }
+
+    .footer {
+        padding-top: 30px;
+    }
+
+    .insurance {
+        padding: 10px 0px;
+    }
+
+    .customers .happy:first-child:after {
+        width: 635px;
+        top: 78px;
+        left: 85px;
+        transform: rotate(30deg);
+    }
+
+    .customers .optimized:nth-child(2)::after {
+        width: 278px;
+        top: 71px;
+        right: 242px;
+        transform: rotate(19deg);
+    }
+
+    .customers .optimized:nth-child(4)::after {
+        width: 288px;
+        top: -250px;
+        right: 136px;
+    }
+
+    .map iframe {
+        width: 100% !important;
+    }
+
+    .main-header ul.manu li {
+        padding: 10px 0px;
+        display: block;
+        width: 100%;
+    }
+
+    .hamberger {
+        display: block;
+        z-index: 9;
+    }
+
+    .main-header {
+        justify-content: space-between;
+    }
+
+    .main-header ul.manu.active {
+        left: 0;
+    }
+
+    .main-header ul li a {
+        color: white;
+        font-weight: 600;
+    }
+
+    .banner h3 {
+        width: 100%;
+    }
+
+    .close-menu {
+        display: block;
+        width: 40px;
+        position: absolute;
+        right: 5px;
+        text-align: center;
+        top: 5px;
+        background-color: #fff;
+        padding: 6px;
+        border-radius: 33px;
+        height: 40px;
+    }
+
+    .close-menu img {
+        width: 20px;
+    }
+
+    @keyframes example {
+        0% {
+            top: 0px;
+            left: 30px;
+        }
+
+        25% {
+            top: 109px;
+            left: 30px;
+        }
+
+        75% {
+            top: 0;
+            left: 30px;
+        }
+
+        100% {
+            top: 0;
+            left: 30px;
+        }
+    }
+
+    .provided-company {
+        margin-top: 40px;
+    }
+
+    .lifeline-img {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .banner-About {
+        height: 420px;
+    }
+
+    .filipbackcontact {
+        width: 100%;
+    }
+
+    .Contact-form {
+        margin-top: 60px;
+    }
+
+
+}
+
+@media only screen and (max-width: 767px) {
+    .protect-after::after {
+        background-color: transparent;
+        height: auto;
+        width: auto;
+        top: 0;
+        left: 0;
+        right: 0;
+    }
+
+    .Insurance-maintitle {
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+
+    p {
+        font-size: 10px;
+    }
+
+    h3 {
+        font-size: 20px;
+        line-height: 35px;
+    }
+
+    .consultant p {
+        font-size: 15px;
+    }
+
+    .consultant h5 {
+        font-size: 17px;
+    }
+
+    .Term-Insurance p {
+        line-height: 20px;
+    }
+
+    .social.Newsocial {
+        position: absolute;
+        left: 160px;
+        width: 50%;
+    }
+
+    .Request {
+        text-align: center;
+    }
+
+    .Request img {
+        max-width: 177px;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+    .banner-About {
+        height: 200px;
+    }
+
+    .aboutr {
+        background-size: 100%;
+    }
+
+    .banner h6 {
+        font-size: 14px;
+        padding: 4px 0px;
+        text-align: center;
+    }
+
+    a.btn-1.comon-btn {
+        padding: 10px 10px;
+        font-size: 12px;
+    }
+
+    .banner h1 {
+        font-size: 25px;
+        text-align: center;
+        line-height: 36px;
+    }
+
+    .banner p {
+        padding: 7px 0px;
+        text-align: center;
+    }
+
+    .banner a.btn-1.comon-btn {
+        display: block;
+        width: 100px;
+        margin: 0 auto;
+        text-align: center;
+        font-size: 12px;
+        padding: 5px 8px;
+    }
+
+    .happy {
+        width: 100%;
+    }
+
+    .optimized {
+        width: 100%;
+    }
+
+    .optimized {
+        width: 100%;
+        margin-top: 0;
+    }
+
+    .customers .happy:first-child:after {
+        display: none;
+    }
+
+    .customers .optimized:nth-child(2)::after {
+        display: none;
+    }
+
+    .customers .optimized:nth-child(4)::after {
+        display: none;
+    }
+
+    .critical {
+        padding: 70px 0px;
+        height: 265px;
+    }
+
+    .critical img {
+        width: 60px;
+    }
+
+    .critical h5 {
+        font-size: 15px;
+    }
+
+    section.how-does {
+        padding: 30px 0px 60px 0px;
+    }
+
+    .simply {
+        margin-top: 50px;
+    }
+
+    .aadami {
+        width: 100%;
+    }
+
+    .simply h3 {
+        margin-top: 15px;
+    }
+
+    .Term-Insurance {
+        padding: 18px 10px;
+        height: 330px;
+    }
+
+    .banner {
+        padding: 110px 0px 0px;
+    }
+
+
+    .simply h3 {
+        font-size: 25px;
+    }
+
+    figure.health {
+        padding-top: 40px;
+    }
+
+    .footerId {
+        padding-top: 20px;
+    }
+
+    .Possession {
+        position: inherit;
+        width: 100%;
+        top: 0;
+    }
+
+    .footr-logo {
+        text-align: center;
+    }
+
+    .footerId ul.footermenu li {
+        margin-left: 0;
+    }
+
+    .email-addres {
+        text-align: center;
+        padding-left: 70px;
+    }
+
+    .email-addres {
+        text-align: center;
+        padding-left: 70px;
+    }
+
+    .btn_1,
+    .btn_1:focus,
+    h4.footHead {
+        display: block;
+        box-shadow: 521px 0 0 #e23b41 inset;
+    }
+
+    .message h3 {
+        font-size: 30px;
+        padding-bottom: 20px;
+        padding-top: 20px;
+    }
+
+    h2 {
+        font-size: 30px;
+    }
+
+    .provided h2 {
+        width: 100%;
+    }
+
+    .provided-company {
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+    .Life-Insurance {
+        height: auto;
+    }
+
+    a.btn-1.comon-btn {
+        width: 100%;
+    }
+
+    .coverages h3 {
+        font-size: 22px;
+    }
+
+    .protect-after {
+        background-size: 100%;
+        padding: 50px 0;
+        overflow: auto;
+        flex-wrap: wrap;
+    }
+
+    .protect-img {
+        position: relative;
+        left: 0;
+        top: 0;
+        width: 100%;
+    }
+
+    .inner {
+        box-shadow: none;
+        padding-bottom: 80px;
+        padding-top: 25px;
+        padding-right: 20px;
+        padding-left: 20px;
+        background-color: transparent;
+    }
+
+    .protect-content {
+        width: 100%;
+    }
+
+    .protect-content h4 {
+        font-size: 20px;
+        line-height: 28px;
+    }
+
+    .lifeline-img {
+        position: relative;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        margin-top: 51px;
+    }
+
+    .protect-content a {
+        height: auto;
+        text-align: center;
+        display: inline-block;
+        text-align: center;
+        margin: 0 auto;
+    }
+
+    .types {
+        flex-wrap: wrap;
+        text-align: center;
+    }
+
+    .types>h4 {
+        padding-right: 0;
+        text-align: center;
+        position: relative;
+        width: 100%;
+    }
+
+    .types>h4::after {
+        content: "";
+        display: none;
+    }
+
+    .author-info.p-t20 a.btn-1.comon-btn {
+        margin-top: 0;
+        margin-left: 0;
+        width: 200px;
+        text-align: center;
+        display: inline-block;
+        margin: 0 auto;
+    }
+
+    .author-info.p-t20 {
+        width: 100%;
+        text-align: center;
+    }
+
+    .author-signature {
+        display: block;
+    }
+
+    .author-signature h4 {
+        text-align: center;
+    }
+
+
+    h4.cursive {
+        padding: 0px 0;
+    }
+
+    .car-content {
+        margin-bottom: 30px;
+    }
+
+    .investment-planning {
+        margin-top: 70px;
+    }
+
+    section.blog-section {
+        background-color: #fbfcff;
+        margin-top: 50px;
+    }
+
+    .filipbackcontact {
+        margin-left: auto;
+    }
+
+    .filipbacksheap::before {
+        border-radius: 100px;
+    }
+
+    .filipbacksheap::after {
+        left: -10px;
+    }
+
+    .segreated-we {
+        padding: 40px 15px;
+    }
+
+    .Lorem {
+        margin-top: 35px;
+    }
+
+    .romanisa {
+        flex-wrap: wrap;
+    }
+
+    .ellipse {
+        width: 70%;
+        margin: 0 auto;
+    }
+
+    .content {
+        transform: rotateY(180deg) !important;
+    }
+
+    .lt-work h6::after {
+        top: 45px;
+    }
+
+    .company-logo img {
+        width: 100%;
+        height: auto;
+    }
+
+    .customers span {
+        display: block;
+        font-weight: 500;
+    }
+
+    .happy h4 {
+        font-size: 25px;
+    }
+
+    .optimized h4 {
+        font-size: 25px;
+    }
+
+    .banner p span {
+        display: block;
+        font-weight: 500;
+    }
+
+
+    @keyframes example {
+        0% {
+            top: 0px;
+            left: 0px;
+        }
+
+        25% {
+            top: 109px;
+            left: 0px;
+        }
+
+        75% {
+            top: 0;
+            left: 0px;
+        }
+
+        100% {
+            top: 0;
+            left: 0px;
+        }
+    }
+}
+
+/********************home-recponce-end**********************/
+
+
+@media only screen and (min-width: 767px) and (max-width: 1600px) {
+    .main-header ul.manu {
+        display: flex;
+        align-items: center;
+        margin-bottom: 0;
+        padding-left: 5px;
+        display: -webkit-inline-box;
+    }
+
+    .main-header ul.manu li {
+        padding: 5px 10px;
+    }
+
+    .main-header ul li a {
+        font-size: 12px;
+        text-transform: uppercase;
+        font-weight: 500;
+        letter-spacing: 0.035em;
+    }
+
+    a.btn-1.comon-btn {
+        background-color: #FFE600;
+        padding: 11px 25px;
+        font-weight: 700;
+        font-size: 15px;
+        color: black;
+        box-shadow: 1px 2px 3px 0 rgb(0 0 0 / 40%);
+        position: relative;
+    }
+}
+
+.error {
+    color: red;
+}

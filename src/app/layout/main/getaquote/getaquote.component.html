@@ -1,0 +1,308 @@
+<div class="background banner-About aboutr" style="background-image:url(./assets/images/AboutEstateNest1.jpg)">
+    
+</div> 
+
+
+<section class="geta-qute">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <form 
+                name="calc" onLoad="update_income(); update_liabilities();"
+                 onChange="update_income(); update_liabilities();
+                  console.log('Form changed.');">
+                 
+                      <table border width="100%" HEIGHT="886">
+                        <tr>
+                          <td COLSPAN="3" HEIGHT="30" BGCOLOR="#FFCCCC"><b><i><font face="Arial,Helvetica">Adding up the liabilities</font></i></b>
+                            <font face="Times New Roman, Times, serif">:&nbsp;</font>
+                          </td>
+                        </tr>
+                  
+                        <tr>
+                          <td width="3%" HEIGHT="84">&nbsp;L1&nbsp;</td>
+                  
+                          <td width="71%" bordercolor="1"><b><i><font face="Arial,Helvetica">Amount required to pay off the balance of the mortgage </font></i></b>(including penalties and legal commissions and fees)</td>
+                  
+                          <td width="26%" bordercolor="1" nowrap>$&nbsp;
+                            <input type="text" size=15 name="mortgage" value="" onBlur="format_number(this); MM_callJS('update_liabilities()')" onchange="MM_callJS('update_liabilities()');" onfocus="MM_callJS('update_liabilities()');"></td>
+                        </tr>
+                  
+                        <tr>
+                          <td width="3%" HEIGHT="46">&nbsp;L2&nbsp;</td>
+                  
+                          <td width="71%" bordercolor="1"><b><i><font face="Arial,Helvetica">Amount required to pay off personal debts</font></i> </b>(including credit cards, personal loans, tuition loans , car loans, etc.)</td>
+                  
+                          <td width="26%" bordercolor="1" nowrap>$&nbsp;<input type="text" size=15 name="debt" value="10,000" onBlur="format_number(this);MM_callJS('update_liabilities()')"></td>
+                        </tr>
+                  
+                        <tr>
+                          <td width="3%">&nbsp;L3&nbsp;</td>
+                  
+                          <td width="71%" bordercolor="1"><b><i>Emergency reserve fund</i></b> (including funding for extraordinary medical expenses and a reserve for emergency and unexpected expenses)</td>
+                  
+                          <td width="26%" bordercolor="1" nowrap>$&nbsp;<input type="text" size=15 name="emergency" value="10,000" onBlur="format_number(this);MM_callJS('update_liabilities()')"></td>
+                        </tr>
+                  
+                        <tr>
+                          <td width="3%">&nbsp;L4&nbsp;</td>
+                  
+                          <td width="71%" bordercolor="1"><b><i><font face="Arial,Helvetica">Final expenses</font></i> </b>(including income taxes, probate fees, lawyers' commissions and fees, accounting fees, other administrative commissions and fees and funeral costs)</td>
+                  
+                          <td width="26%" bordercolor="1" nowrap>$&nbsp;<input type="text" size=15 name="funeral" value="10,000" onBlur="format_number(this);MM_callJS('update_liabilities()')"></td>
+                        </tr>
+                  
+                        <tr>
+                          <td width="3%">&nbsp;</td>
+                  
+                          <td width="71%" bordercolor="1"><b><i><font face="Arial,Helvetica">Immediate Cash Liabilities at Death</font></i> </b></td>
+                  
+                          <td width="26%" bordercolor="1" nowrap>$&nbsp;<input type="text" size=15 name="tot_cash_liab" value="" onBlur="MM_callJS('update_liabilities()')" onFocus="update_liabilites()"></td>
+                        </tr>
+                  
+                        <tr>
+                          <td width="3%">&nbsp;</td>
+                  
+                          <td width="71%" bordercolor="1">&nbsp;</td>
+                  
+                          <td width="26%" bordercolor="1"><button type="button" value="1" onclick="update_liabilities()">Update Liabilities</button>&nbsp;</td>
+                        </tr>
+                  
+                        <tr>
+                          <td width="3%">&nbsp;C0&nbsp;</td>
+                  
+                          <td width="71%" bordercolor="1"><b><i><font face="Arial,Helvetica">Childrens' education fund</font></i></b>
+                            <br>&nbsp;
+                            <table ALIGN=RIGHT width="80%">
+                              <tr>
+                                <td nowrap>Number of Children</td>
+                  
+                                <td><input type="text" size=2 maxlength=2 name="children" value="2" onBlur="MM_callJS('update_college()')">child/children&nbsp;</td>
+                              </tr>
+                  
+                              <tr>
+                                <td nowrap>Cost per Year per Child</td>
+                  
+                                <td nowrap>$&nbsp;<input type="text" size=15 name="cost_per_child" value="10,000" onBlur="format_number(this);MM_callJS('update_college()')"></td>
+                              </tr>
+                  
+                              <tr>
+                                <td nowrap>Years Needed Per Child</td>
+                  
+                                <td><input type="text" size=2 maxlength=2 name="tuition_years" value="4" onBlur="MM_callJS('update_college()')">yrs.&nbsp;</td>
+                              </tr>
+                            </table>
+                  
+                          </td>
+                  
+                          <td width="26%" bordercolor="1">&nbsp;</td>
+                        </tr>
+                  
+                        <tr>
+                          <td width="3%">&nbsp;</td>
+                  
+                          <td width="71%" bordercolor="1">&nbsp;</td>
+                  
+                          <td width="26%" bordercolor="1">&nbsp;</td>
+                        </tr>
+                  
+                        <tr>
+                          <td width="3%">&nbsp;L5&nbsp;</td>
+                  
+                          <td width="71%" bordercolor="1"><b><i><font face="Arial,Helvetica">Total&nbsp;</font></i></b> (
+                            <b><i>Childrens' education fund</i></b>)</td>
+                  
+                          <td width="26%" bordercolor="1" nowrap>$&nbsp;<input type="text" size=15 name="total_college" value="80,000" onFocus="this.blur()"></td>
+                        </tr>
+                  
+                        <tr>
+                          <td width="3%">&nbsp;</td>
+                  
+                          <td width="71%" bordercolor="1">&nbsp;</td>
+                  
+                          <td width="26%" bordercolor="1">&nbsp;</td>
+                        </tr>
+                  
+                        <tr>
+                          <td>&nbsp;I0&nbsp;</td>
+                  
+                          <td>
+                            <b><i><font face="Arial,Helvetica">Funding for replacement of lost income</font></i></b>
+                            <br>&nbsp;
+                  
+                            <table>
+                              <tr>
+                                <td>
+                                  <select name="frequency" size=1 onBlur="MM_callJS('update_income()')">
+                                                              <option value=1>Annual
+                                                              <option value=2>Semi-Annual
+                                                              <option value=3>Quarterly
+                                                              <option value=6>Bi-Monthly
+                                                              <option value=12 selected>Monthly
+                                                          </select> income:
+                                </td>
+                  
+                                <td nowrap>$&nbsp;<input type="text" name="income" value="7,000" onBlur="format_number(this);MM_callJS('update_income()')"></td>
+                              </tr>
+                  
+                              <tr>
+                                <td nowrap>Percentage of income<br>required for survivors (i.e. 90%)</td>
+                  
+                                <td><input type="text" size=3 maxlength=3 name="family_percentage" value="90" onBlur="MM_callJS('update_income()')">%&nbsp;</td>
+                              </tr>
+                  
+                              <tr>
+                                <td nowrap>Number of years over which<br>income continuation will be required</td>
+                  
+                                <td><input type="text" size=2 maxlength=2 name="income_years" value="20" onBlur="MM_callJS('update_income()')">yrs.&nbsp;</td>
+                              </tr>
+                  
+                              <tr>
+                                <td class="rowHeadings" nowrap>Anticipated Interest expected<br> on investment of funds:</td>
+                                <td><input type="text" size="5" maxlength="5" name="interest" value="5" onBlur="MM_callJS('update_income()')"><b>%</b></td>
+                              </tr>
+                  
+                              <tr>
+                  
+                                <td class="rowHeadings" nowrap>Income is to be<br> indexed (for inflation)</td>
+                                <td><input type="text" size="5" maxlength="5" name="indexed" value="3" onBlur="MM_callJS('update_income()')"><b>%</b></td>
+                  
+                              </tr>
+                            </table>
+                  
+                            <p>&nbsp;</td>
+                          <td>&nbsp;</td>
+                        </tr>
+                  
+                        <tr>
+                          <td width="3%">&nbsp;</td>
+                        </tr>
+                  
+                        <tr>
+                          <td width="3%">&nbsp;</td>
+                  
+                          <td width="71%">&nbsp;</td>
+                  
+                          <td width="26%">&nbsp;</td>
+                        </tr>
+                  
+                        <tr>
+                          <td width="3%">&nbsp;L6&nbsp;</td>
+                  
+                          <td width="71%"><b><i><font face="Arial,Helvetica">Total </font></i></b>(<b><i>Provision for income funding</i></b>)</td>
+                  
+                          <td width="26%" nowrap>$&nbsp;<input type="text" size=15 name="total_income" value="0" onFocus="this.blur()"></td>
+                        </tr>
+                  
+                        <tr>
+                          <td width="3%">&nbsp;</td>
+                  
+                          <td width="71%">&nbsp;</td>
+                  
+                          <td width="26%">&nbsp;</td>
+                        </tr>
+                  
+                        <tr BGCOLOR="#FFCCCC">
+                          <td COLSPAN="2"><b><font face="Arial,Helvetica"><font size=+1>TOTALS LIABILITIES</font></font></b>:&nbsp;</td>
+                  
+                          <td width="26%" nowrap>$&nbsp;<input type="text" size=15 name="total_liabilities" value="0" onFocus="this.blur()"></td>
+                        </tr>
+                      </table>
+                  
+                    <br>
+                      <table border=1 width="100%">
+                        <tr>
+                          <td COLSPAN="3" BGCOLOR="#00CC00"><b><i><font face="Arial,Helvetica">Current Assets:</font></i></b></td>
+                        </tr>
+                  
+                        <tr>
+                          <td width="5%">&nbsp;CA1&nbsp;</td>
+                  
+                          <td width="71%"><b><i>Liquid Assets:</i></b> (Including bank accounts, mutual funds, certificates of deposit, stocks, bonds and cash)&nbsp;</td>
+                  
+                          <td width="24%" nowrap>$&nbsp;<input id="assets" type="text" size=15 name="assets" value="0" onBlur="format_number(this); MM_callJS('update_assets()');"></td>
+                        </tr>
+                  
+                        <tr>
+                          <td width="5%">&nbsp;CA2</td>
+                  
+                          <td width="71%"><b><i>Face (coverage) amount of all life insurance policies in force</i></b></td>
+                  
+                          <td width="24%" nowrap>$&nbsp;<input type="text" size=15 name="life" value="0" onBlur="format_number(this);MM_callJS('update_assets()')"></td>
+                        </tr>
+                  
+                        <tr BGCOLOR="#00CC00">
+                          <td COLSPAN="2"><b><font face="Arial,Helvetica"><font size=+1>TOTAL OF CURRENT LIQUID ASSETS &amp; IN-FORCE LIFE INSURANCE</font></font></b>:&nbsp;</td>
+                  
+                          <td width="24%" nowrap>$&nbsp;<input type="text" size=15 name="total_assets" value="0" onFocus="this.blur()"></td>
+                        </tr>
+                      </table>
+                      <p><input type="button" name="recalculate" value="ReCalculate" onClick="MM_callJS('update_need()')">
+                        <input type="button" name="recalculate" value="ReCalculate" onClick="alert('This message');">
+                    
+                  
+                    <p><br>
+                        <table border=2 width="100%">
+                          <tr BGCOLOR="#FFCCCC">
+                            <td width="50%">
+                              <b><i>Total Liabilities</i></b> (from above)
+                            </td>
+                  
+                            <td width="50%" nowrap>$&nbsp;
+                              <input type="text" size=20 name="final_total_liabilitites" value="0" onFocus="this.blur()"></td>
+                          </tr>
+                  
+                          <tr>
+                            <td width="50%">
+                             minus
+                            </td>
+                  
+                            <td width="50%">
+                             -
+                            </td>
+                          </tr>
+                  
+                          <tr BGCOLOR="#00CC00">
+                            <td width="50%">
+                             <b><i>Total Assets</i></b> (from above)
+                            </td>
+                  
+                            <td width="50%" nowrap>$&nbsp;<input type="text" size=20 name="final_total_assets" value="0" onFocus="this.blur()"></td>
+                          </tr>
+                  
+                          <tr>
+                            <td width="50%">
+                              equals
+                            </td>
+                  
+                            <td width="50%">
+                              =
+                            </td>
+                          </tr>
+                  
+                          <tr BGCOLOR="#FFFF00">
+                            <td width="50%" BGCOLOR="#FFFFFF">
+                              Additional
+                            life insurance coverage need estimate
+                            </td>
+                  
+                            <td width="50%" BGCOLOR="#FFCC00" nowrap><b>$&nbsp;</b>
+                              <input type="text" name="need" value="0" onFocus="this.blur()">
+                              <input type="hidden" name="need_for_quote" value="1">
+                  
+                            </td>
+                          </tr>
+                        </table>
+                  
+               
+                       
+                        <p>The amount shown in the yellow box is an estimate of the amount of life insurance coverage that you may need IN ADDITION to existing coverage that you have included under</p>
+     Note:&nbsp; Legal Disclaimer: This financial needs analysis calculator is presented solely for providing information and illustration only. The calculator is anticipated to produce precise results, but your specific circumstance may demand consideration and careful financial planning of all the other aspects not included within this tool. You should definitely consult a knowledgeable professional before deciding on insurance coverage or relying completely on using the information provided by the calculator. We cannot guarantee or promise any of the findings or information provided by this financial needs calculator because it is dependent on the information you submit, and we accept no liability. This calculator is not designed to provide investment advice, and should not be interpreted as a financial planning tool. It is just for demonstration purposes. Our website does not provide an insurance offer. All life insurance applications are subject to underwriting.<br>
+      <p>
+          <input type="submit" name="Submit" value="Do an additional estimate"></p>
+                  </form>
+            </div>
+          
+        </div>
+    </div>
+</section>

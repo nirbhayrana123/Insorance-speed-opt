@@ -1,0 +1,45 @@
+
+
+.happycustomeranimation {
+    width: 70px;
+    height: 80px; 
+    position: relative;
+    animation: myfirst 5s linear 2s infinite alternate;
+}
+
+
+
+@keyframes myfirst {
+    0%   {  left:0px; top:0px;}
+    25%  {  left:150px; top:0px;}
+    50%  {  left:150px; top:150px;}
+    75%  {  left:0px; top:150px;}
+    100% {  left:0px; top:0px;}
+  }
+  .cercil {
+    margin-bottom: 20px;
+}
+.cercil img.roteateas {
+    width: 120px;
+    height: 115px;
+}
+  .roteateas {
+    animation: rotation 5s infinite linear;
+    -webkit-animation: rotation 5s infinite linear;
+}
+.linear {
+    animation-timing-function: linear;
+  }
+  
+  .infinite {
+    animation-iteration-count: infinite;
+  }
+  
+  @keyframes rotation {
+    from {
+      transform: rotate(0deg);
+    }
+    to {
+      transform: rotate(359deg);
+    }
+  }

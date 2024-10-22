@@ -1,0 +1,195 @@
+<footer class="footerId">
+    <div class="container">
+        <div class="Possession">
+            <img src="assets/images/Possession.png" alt="Safeguard Umbrella ">
+        </div>
+        <div class="row">
+            <div class="col-md-6">
+                <div class="footr-logo">
+                    <img src="assets/images/logo.svg" alt="Estate Nest Logo">
+                    <div>
+                        <h4 class="footHead">Discover</h4>
+                    </div>
+                    <ul class="footermenu">
+                        <li><a routerLink="./">Home</a></li>
+                        <li><a routerLink="./about">About</a></li>
+                        <li><a routerLink="./insurance">Insurance</a></li>
+                        <li><a routerLink="./investment">Investment</a></li>
+                        <li><a routerLink="./blog">Blog</a></li>
+                        <li><a routerLink="./contact">Contact</a></li>
+                    </ul>
+                </div>
+                <h4 class="footHead">Let's Communicate</h4>
+                <div class="email-addres">
+                    <a href="Hello@estatenest.ca"><i class="fas fa-envelope-open-text"></i>Hello@estatenest.ca</a>
+                    <a href="tel:7808603191"><i class="fa fa-phone" aria-hidden="true"></i>(780) 860 3191</a>
+                    <a href="www.estatenest.ca"><i class="fa fa-globe" aria-hidden="true"></i> www.estatenest.ca</a>
+                </div>
+                <div class="follow">
+                    <h4 class="footHead">Social Interactions</h4>
+                </div>
+                <div class="footer-socail-icon">
+                    <div class="mick">
+                        <img src="assets/images/SocialAnnouncement.png" alt="Social Announcement">
+                    </div>
+                    <div class="social Newsocial">
+                        <ul>
+                            <li><a href="https://www.facebook.com/estatenest.ca/" target="_blank"><i
+                                        class="fab fa-facebook"></i></a></li>
+                            <li><a href="https://twitter.com/EstateNest" target="_blank"><i
+                                        class="fab fa-twitter"></i></a></li>
+                            <li><a href="https://web.whatsapp.com/send?phone=+17808603191&amp;text=Hello !"
+                                    target="_blank"><i class="fab fa-whatsapp" aria-hidden="true"></i></a></li>
+                            <li><a href="https://www.linkedin.com/company/estatenest/?viewAsMember=true"
+                                    target="_blank"><i class="fab fa-linkedin"></i></a></li>
+                            <li><a href="https://www.instagram.com/estate_nest_inc/?hl=en" target="_blank"><i
+                                        class="fab fa-instagram"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col-md-6">
+                <div class="Request">
+                    <img src="assets/images/coffee.gif" alt="Meeting">
+
+                    <div class="contactForm">
+                        <h4> Coffee Is On Us</h4>
+                        <!-- <iframe class="footer-form"  style="border: none; width:100%;" scrolling="no" frameBorder="0" [src]="urlSafe"></iframe> -->
+                        <!-- <iframe class="footer-form" scrolling="no" src="http://estatenest.ca/blog/footer-form/" style="border: none; width:100%;"></iframe> -->
+                        <form [formGroup]="form" (ngSubmit)="onSubmit()">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="fName" formControlName="fName" size="40"
+                                            class="form-control" aria-required="true" aria-invalid="false"
+                                            placeholder="First Name">
+                                        <div *ngIf="f['fName'].touched && f['fName'].invalid">
+                                            <div *ngIf="f['fName'].errors && f['fName'].errors['minlength']">
+                                                <span style="color: red;">First Name
+                                                    must be atleast 3 Letters long</span>
+                                            </div>
+                                            <div *ngIf="f['fName'].errors && f['fName'].errors['required']"><span
+                                                    style="color: red;">First Name cannot be empty</span></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="lName" formControlName="lName" size="40"
+                                            class=" form-control" aria-required="true" aria-invalid="false"
+                                            placeholder="Last Name">
+                                        <div *ngIf="f['lName'].touched && f['lName'].invalid">
+                                            <div *ngIf="f['lName'].errors && f['lName']errors['minlength']">
+                                                <span style="color: red;">Last Name
+                                                    must be atleast 3 letters long</span>
+                                            </div>
+                                            <div *ngIf="f['lName'].errors && f['lName']errors['required']">
+                                                <span style="color: red;">Last Name
+                                                    cannot be empty</span>
+                                            </div>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="text" name="email" formControlName="email" size="40"
+                                            class=" form-control" aria-required="true" aria-invalid="false"
+                                            placeholder="Email">
+                                        <div *ngIf="f['email'].touched && f['email'].invalid">
+                                            <div *ngIf="f['email'].errors && f['email'].errors['required']">
+                                                <span style="color: red;">
+                                                    Email cannot be empty</span>
+                                            </div>
+                                            <div *ngIf="f['email'].errors && f['email'].errors['email']">
+                                                <span style="color: red;">
+                                                    Invalid Email</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group"><input type="text" name="phone" formControlName="phone"
+                                            size="40" class=" form-control" aria-required="true" aria-invalid="false"
+                                            placeholder="Phone">
+                                        <div *ngIf="f['phone'].touched && f['phone'].invalid">
+                                            <div *ngIf="f['phone'].errors && f['phone'].errors['minlength']">
+                                                <span style="color: red;">Phone Number must be 12 digits long</span>
+                                            </div>
+                                            <div *ngIf="f['phone'].errors && f['phone'].errors['required']">
+                                                <span style="color: red;">
+                                                    Phone number cannot be empty</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="date" name="booking" formControlName="bookingDate"
+                                            class="wpcf7-form-control wpcf7-date wpcf7-validates-as-required wpcf7-validates-as-date form-control"
+                                            aria-required="true" aria-invalid="false" placeholder="Booking Date">
+                                        <div *ngIf="f['bookingDate'].touched">
+                                            <div *ngIf="f['bookingDate'].errors && f['bookingDate'].errors['required']">
+                                                <span style="color: red;">Booking Date cannot be empty</span>
+                                            </div>
+                                            <div
+                                                *ngIf="f['bookingDate'].errors && f['bookingDate'].errors['minlength']">
+                                                <span style="color: red;">Booking Date must be 10 alphabets long</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="form-group">
+                                        <input type="time" name="bookingTime" formControlName="bookingTime" size="40"
+                                            class="form-control" aria-required="true" aria-invalid="false"
+                                            placeholder="Time">
+                                        <div *ngIf="f['bookingTime'].touched">
+                                            <div *ngIf="f['bookingTime'].errors && f['bookingTime'].errors['required']">
+                                                <span style="color: red;">Booking Time cannot be empty</span>
+                                            </div>
+                                            <div
+                                                *ngIf="f['bookingTime'].errors && f['bookingTime'].errors['minlength']">
+                                                <span style="color: red;">Booking Time must be 7 alphabets long</span>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-md-12">
+                                    <div class="form-group">
+                                        <textarea name="message" cols="40" formControlName="message" rows="10"
+                                            class=" form-control" aria-invalid="false" placeholder="Message"></textarea>
+                                    </div>
+                                    <div class="form-group tresty">
+                                        <input type="submit" class=" form-control btn_1">
+                                    </div>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+                <div class="map">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2377.3614879391694!2d-113.45612408471492!3d53.42624457642554!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x53a01fd5a7ee24b7%3A0x153bc76b1c8e6b8a!2sEstate%20Nest%20Inc.!5e0!3m2!1sen!2sin!4v1650097162871!5m2!1sen!2sin"
+                        style="border: 0px none;" allowfullscreen="" loading="lazy" data-origwidth="600"
+                        data-origheight="450" width="100%" height="300"></iframe>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <a href="index.html"><img src="assets/images/logo.svg" alt="Estate Nest Logo"></a>
+            <div class="text-center ban">
+                <img src="assets/images/nesting.png" alt="Insurance Benefits Investments">
+            </div>
+            <p> © 2022 Estate Nest Inc. All rights reserved. <a routerLink="./ethics"> | Code of Ethics</a> <a
+                    routerLink="./privacy"> | Privacy</a> <a routerLink="./terms"> | Terms & Conditions</a>
+            </p>
+
+        </div>
+    </div>
+</footer>

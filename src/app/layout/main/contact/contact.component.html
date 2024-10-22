@@ -1,0 +1,187 @@
+<main>
+  <div class="background banner-About contactbner" style="background-image:url(./assets/images/contact-banner.png)">
+  </div>
+
+  <section class="Contact">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4 col-md-12 col-sm-12" style="margin-right: 80px;">
+          <div class="maneg-sineup">
+            <div class="contac-filipcart">
+              <div class="flip-card" tabindex="0">
+                <div class="flip-card-inner">
+                  <div class="flip-card-back">
+                    <div class="filipbacksheap">
+                      <div class="filipbackcontact">
+                        <span class="user">
+                          <i class="fas fa-user-friends"></i>
+                        </span>
+                        <p>Committed To Our Clients</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="mange-sin">
+            <div class="contac-filipcart">
+              <div class="flip-card" tabindex="0">
+                <div class="flip-card-inner">
+                  <div class="flip-card-back">
+                    <div class="filipbacksheap">
+                      <div class="filipbackcontact">
+                        <span class="user"> <i class="fas fa-user-friends"></i></span>
+                        <p>We Cater To Our Customers' Financial Needs</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="mange-sin">
+            <div class="contac-filipcart">
+              <div class="flip-card" tabindex="0">
+                <div class="flip-card-inner">
+                  <div class="flip-card-back">
+                    <div class="filipbacksheap">
+                      <div class="filipbackcontact">
+                        <span class="user"> <i class="fas fa-user-friends"></i></span>
+                        <p>Integirty & Kindness Is A What We Practice</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-lg-1 col-md-12 col-sm-12"> </div>
+        <div class=" col-lg-6 col-md-12 col-sm-12">
+          <div class="Contact-form ">
+            <h4>Drop us a line</h4>
+            <form [formGroup]="form" (ngSubmit)="onSubmit()">
+              <div class="row">
+                <div class="col-md-6 col-sm-12">
+                  <input type="text" class="form-control" name="name" formControlName="name" placeholder="Your Name *">
+                  <div *ngIf="f['name'].touched && f['name'].invalid">
+                    <div *ngIf="f['name'].errors && f['name'].errors['required']">
+                      <span style="color: red;">Name cannot be empty</span>
+                    </div>
+                    <div *ngIf="f['name'].errors && f['name'].errors['minlength']">
+                      <span style="color: red;">Name must be atleast 5 letters long</span>
+                    </div>
+                  </div>
+                </div>
+                <div class="col-md-6 col-sm-12">
+                  <input type="text" class="form-control" name="email" formControlName="email"
+                    placeholder="Your Email *">
+                  <div *ngIf="f['email'].touched && f['email'].invalid">
+                    <div *ngIf="f['email'].errors && f['email'].errors['required']">
+                      <span style="color: red;">Email cannot be empty</span>
+                    </div>
+                    <div *ngIf="f['email'].errors && f['email'].errors['email']">
+                      <span style="color: red;">Invalid Email</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                  <input type="tel" class="form-control" name="phone" formControlName="phone" placeholder="Your Phone">
+                  <div *ngIf="f['phone'].touched && f['phone'].invalid">
+                    <div *ngIf="f['phone'].errors && f['phone'].errors['required']">
+                      <span style="color: red;">Phone cannot be empty</span>
+                    </div>
+                    <div *ngIf="f['phone'].errors && f['phone'].errors['minlength']">
+                      <span style="color: red;">Phone must be atleast 12 digits long</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12">
+                  <input type="text" class="form-control" name="subject" formControlName="subject"
+                    placeholder="Subject">
+                  <div *ngIf="f['subject'].touched && f['subject'].invalid">
+                    <div *ngIf="f['subject'].errors && f['subject'].errors['required']">
+                      <span style="color: red;">Subject cannot be empty</span>
+                    </div>
+                    <div *ngIf="f['subject'].errors && f['subject'].errors['minlength']">
+                      <span style="color: red;">Subject must be atleast 25 alphabets long</span>
+                    </div>
+                  </div>
+                </div>
+
+
+                <br><br>
+                <div class="col-md-6 col-sm-12">
+                  <select class="form-control" formControlName="AdviceType" (change)="client()">
+                    <option selected value="">Select Option</option>
+                    <option value="Client">For Client(s)</option>
+                    <option value="Advisor">For Insurance Advisor(s)</option>
+                  </select>
+                  <div *ngIf="f['AdviceType'].touched && f['AdviceType'].invalid">
+                    <div *ngIf="f['AdviceType'].errors && f['AdviceType'].errors['required']">
+                      <span style="color: red;">AdviceType Dropdown cannot be empty</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12" *ngIf="clientType=='web'">
+                  <ng-multiselect-dropdown [settings]="helpDDSettings" formControlName="help" [data]="helpDDList">
+                  </ng-multiselect-dropdown>
+                  <div *ngIf="f['help'].touched && f['help'].invalid">
+                    <div *ngIf="f['help'].errors && f['help'].errors['required']">
+                      <span style="color: red;">Help Dropdown cannot be empty</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12" *ngIf="clientType=='insurance'">
+                  <select class="form-control" formControlName="webService">
+                    <option selected value="">Select Option</option>
+                    <option value="Service - Website Development(WordPress, Angular etc.)">Service - Website Development(WordPress, Angular etc.)</option>
+                    <option value="Service - Website Hosting, Google Analytics">Service - Website Hosting, Google Analytics</option>
+                    <option value="Service - Social Media Page Setup">Service - Social Media Page Setup</option>
+                    <option value="Buy - Ethics and Compliance Package">Buy - Ethics and Compliance Package</option>
+                    <option value="Buy / Subscribe - Financial Calcualtors">Buy / Subscribe - Financial Calcualtors</option>
+                    <option value="Join Our Brokerage">Join Our Brokerage</option>
+                  </select>
+                  <div *ngIf="f['webService'].touched && f['webService'].invalid">
+                    <div *ngIf="f['webService'].errors && f['webService'].errors['required']">
+                      <span style="color: red;">Web Dropdown cannot be empty</span>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-md-12 col-sm-12 mt-2">
+                  <textarea class="form-control" id="validationTextarea" name="message" formControlName="message"
+                    placeholder="Your Message ..."></textarea>
+                  <div *ngIf="f['message'].touched && f['message'].invalid">
+                    <div *ngIf="f['message'].errors && f['message'].errors['required']">
+                      <span style="color: red;">Message cannot be empty</span>
+                    </div>
+                    <div *ngIf="f['message'].errors && f['message'].errors['minlength']">
+                      <span style="color: red;">Message must be atleast 150 alphabets long</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+
+              <button class="btn-1 comon-btn submited">Submit</button>
+            </form>
+
+            <!-- <iframe class="contactinptry" scrolling="no" width="100%" height="100%" frameBorder="0"
+              [src]="urlSafe"></iframe> -->
+
+
+
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+</main>

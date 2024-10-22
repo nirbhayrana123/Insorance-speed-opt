@@ -1,0 +1,39 @@
+.pravacy {
+    padding-top: 150px;
+    padding-bottom: 100px;
+}
+
+.pravacy h4 {
+    font-size: 35px;
+    text-align: left;
+    line-height: 2;
+}
+.pravacy p {
+    font-size: 18px;
+    line-height: 2;
+}
+.consent-list {
+    padding-left: 25px;
+}
+.consent-list li {
+    list-style: auto;
+}
+.notes {
+    display: flex;
+    align-items: flex-start;
+    margin: 20px 0px;
+}
+
+
+@media only screen and (max-width: 1499px) {
+.pravacy h1 {
+    font-size: 35px;
+}
+.pravacy h4 {
+    font-size: 30px;
+}
+.pravacy p {
+    font-size: 17px;
+    line-height: 1.5;
+}
+}

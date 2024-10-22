@@ -1,0 +1,38 @@
+input {
+	outline: none;
+	padding: 4px;
+}
+table {
+	border-spacing:0px;
+/* 	border:1px solid transparent; */
+	border:1px solid blueviolet;
+	border-radius: 6px;
+}
+table td {
+	padding:3px;
+}
+input[type="button"] {
+    background-color: #FFE600;
+    padding: 12px 27px;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    box-shadow: 1px 2px 3px 0 rgb(0 0 0 / 40%);
+    position: relative;
+    margin-top:20px;
+    display: inline-block;
+    cursor: pointer;
+}
+input[type="submit"] {
+    background-color: #FFE600;
+    padding: 12px 27px;
+    font-weight: 700;
+    font-size: 18px;
+    color: black;
+    box-shadow: 1px 2px 3px 0 rgb(0 0 0 / 40%);
+    position: relative;
+    cursor: pointer;
+    margin-top:20px;
+    display: inline-block;
+    cursor: pointer;
+}
